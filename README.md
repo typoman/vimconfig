@@ -67,13 +67,13 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `:q!` close the file without saving\
 `:e fileName` edit filename
 `ZZ` close the window/save and close\
-`\re` show most recent opened files\
+`<space>re` show most recent opened files\
 `tab` switch between opened files (buffers)\
 `dd`  delete the current line and copy it\
 `G` go to end of the file\
 `gg`  go to first character in the file\
-`\r`  run in python\
-`\rf` run in Robofont\
+`<space>r`  run in python\
+`<space>rf` run in Robofont\
 `/`   search the file (including regular expressions)\
 `n`   go to next match term in search\
 `N`   go to previous match\
