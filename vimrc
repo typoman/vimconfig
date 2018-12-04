@@ -34,7 +34,7 @@ Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
 Plug 'hdima/python-syntax'
 Plug '  yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
-Plug '
+
 call plug#end()
 
 colorscheme bahman
@@ -96,7 +96,4 @@ autocmd FileChangedShellPost *
 map <silent> <leader>ss :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-augroup ILoveCorrections
- autocmd!
- autocmd BufEnter * EnableAutocorrect
-augroup END
+autocmd BufRead,BufNewFile *.md setlocal spell
