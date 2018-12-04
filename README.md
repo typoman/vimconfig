@@ -17,6 +17,12 @@ cd src
 # Installing uisng the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
+2. Remove previous vim and install:
+```
+brew remove vim
+brew cleanup
+brew install vim --with-python3
+```
 
 # Backup this configuration to the current repo:
 ```
