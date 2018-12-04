@@ -3,14 +3,16 @@ This is notes for using the vim with the configurations inside this repo. Also t
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
 2. Check if `make` is installed in terminal:\
-`make --version`
-   If make is not installed, A window pops up instructing you to install the developer tools.
-3. Download from git:
-`https://github.com/vim/vim`
-4. Configure:
-`cd vim
+`make --version`\
+   If make is not installed, A window pops up instructing you to install the developer tools.\
+3. Download from git:\
+`https://github.com/vim/vim`\
+4. Configure:\
+```
+cd vim
 cd src
-./configure --with-features=huge --enable-python3interp=yes`
+./configure --with-features=huge --enable-python3interp=yes
+```
 5. Build and install:
 `make; make install`
 
