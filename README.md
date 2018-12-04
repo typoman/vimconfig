@@ -1,10 +1,14 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # Building vim from the source on OSX (High Sierra):
 1. Check if `make` is installed in terminal:\
-`make --version`\
+```
+make --version
+```
    If make is not installed, A window pops up instructing you to install the developer tools.
 2. Download from git:\
-`https://github.com/vim/vim`
+```
+https://github.com/vim/vim
+```
 3. Configure:
 ```
 cd vim
@@ -12,7 +16,9 @@ cd src
 ./configure --with-features=huge --enable-python3interp=yes
 ```
 5. Build and install:\
-`make; make install`
+```
+make; make install
+```
 
 # Installing uisng the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
@@ -47,7 +53,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `h`   move cursor to the left\
 `j`   move cursor down\
 `k`   move cursor up\
-`l`   move cursor right
+`l`   move cursor right\
 `cw` delete the word and go to insert mode\
 `D` delete characters from cursor until end of the line\
 `o` create a new line after current line and go to insert mode\
