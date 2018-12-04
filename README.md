@@ -1,5 +1,5 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
-# Building vim from the source on OSX (High Sierra):
+# Building vim from the source on OS X (High Sierra):
 1. Check if `make` is installed in terminal:
 ```
 make --version
