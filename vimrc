@@ -82,6 +82,8 @@ map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :MRU<CR>
+nnoremap <leader>n :tabnew<CR>
+nnoremap <leader>n :tabnew<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>

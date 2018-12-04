@@ -109,5 +109,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `U` make the selection uppercase\
 `>` increase indentation\
 `<` decrease indentation\
+`<space>n` new untitled file\
+`<space>c` close the file\
+`<space>cc` close the file without saving\
 
 
