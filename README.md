@@ -16,6 +16,8 @@ git push origin master
 ```
 
 # Keyboard shortcuts:
+Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text.
+
 ## Main shortcuts:
 `Esc` go to normal mode\
 `i`   go to insert mode\
