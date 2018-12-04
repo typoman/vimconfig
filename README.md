@@ -11,7 +11,8 @@ git init
 git add *
 git commit -am "New changes to the configurations"
 git remote add origin https://github.com/typoman/vimconfig.git
-git push origin master```
+git push origin master
+```
 
 # Keyboard shortcuts:
 ## Main shortcuts:
