@@ -1,17 +1,17 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # Building vim from the source on OSX (High Sierra):
-1. Check if 'brew' is installed in terminal, otherwise install Homebrew using:\
-'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)'
-2. Check if 'make' is installed in terminal:\
-'make --version'\
-\
+1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
+`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
+2. Check if `make` is installed in terminal:\
+`make --version`\
+
 # Backup this configuration to the current repo:
-'cd ~/.vim
+`cd ~/.vim
 git init
 git add *
 git commit -am "New changes to the configurations"
 git remote add origin https://github.com/typoman/vimconfig.git
-git push origin master'
+git push origin master`
 
 # Keyboard shortcuts:
 ## Main shortcuts:
