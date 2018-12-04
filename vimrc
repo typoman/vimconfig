@@ -84,7 +84,7 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :MRU<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
-nnoremap <leader>cc :bd!<CR>
+nnoremap <leader>s :w<CR>nnoremap <leader>cc :bd!<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
