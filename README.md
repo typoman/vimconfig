@@ -1,20 +1,22 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # Building vim from the source on OSX (High Sierra):
-1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
-`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
-2. Check if `make` is installed in terminal:\
+1. Check if `make` is installed in terminal:\
 `make --version`\
    If make is not installed, A window pops up instructing you to install the developer tools.
-3. Download from git:\
+2. Download from git:\
 `https://github.com/vim/vim`
-4. Configure:
+3. Configure:
    
+# Installing uisng the Homebrew:
+1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
+`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
+
 ```
 cd vim
 cd src
 ./configure --with-features=huge --enable-python3interp=yes
 ```
-5. Build and install:
+5. Build and install:\
 `make; make install`
 
 # Backup this configuration to the current repo:
@@ -44,7 +46,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `cw` delete the word and go to insert mode\
 `D` delete characters from cursor until end of the line\
 `o` create a new line after current line and go to insert mode\
-`:`w save the file\
+`:w` save the file\
 `:q!` close the file without saving\
 `ZZ` close the window/save and close\
 `\re` show most recent opened files\
