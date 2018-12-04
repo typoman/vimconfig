@@ -43,7 +43,7 @@ git push origin master
 ```
 After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim. Of course you need to change the url if you're copying this repo for yourself.
 # Keyboard shortcuts:
-Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text.
+Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this garantees more efficient keystrokes and less hand movements while editing text.
 
 ## Main shortcuts:
 `Esc` go to normal mode\
