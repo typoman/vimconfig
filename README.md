@@ -26,7 +26,7 @@ git commit -am "New changes to the configurations"
 git remote add origin https://github.com/typoman/vimconfig.git # only needed for the first time
 git push origin master
 ```
-After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim.
+After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim. Of course you need to change the url if you're copying this repo for yourself.
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text.
 
