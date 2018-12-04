@@ -60,7 +60,6 @@ set ignorecase
 set smartcase
 set wildmenu
 set foldmethod=indent
-" set termguicolors
 let g:pymode = 1
 let g:pymode_python = 'python3'
 let python_highlight_all=1
