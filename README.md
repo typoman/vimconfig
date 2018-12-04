@@ -4,7 +4,7 @@ This is notes for using the vim with the configurations inside this repo. Also t
 ```
 make --version
 ```
-   If make is not installed, A window pops up instructing you to install the developer tools.
+   If make is not installed, A window pops up instructing you to install the developer tools.\
 2. Download from git:
 ```
 https://github.com/vim/vim
