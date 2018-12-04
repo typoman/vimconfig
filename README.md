@@ -6,7 +6,8 @@ This is notes for using the vim with the configurations inside this repo. Also t
 `make --version`
 
 # Backup this configuration to the current repo:
-```cd ~/.vim
+```
+cd ~/.vim
 git init
 git add *
 git commit -am "New changes to the configurations"
