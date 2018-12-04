@@ -1,11 +1,11 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # Building vim from the source on OSX (High Sierra):
-1. Check if `make` is installed in terminal:\
+1. Check if `make` is installed in terminal:
 ```
 make --version
 ```
    If make is not installed, A window pops up instructing you to install the developer tools.
-2. Download from git:\
+2. Download from git:
 ```
 https://github.com/vim/vim
 ```
@@ -15,14 +15,16 @@ cd vim
 cd src
 ./configure --with-features=huge --enable-python3interp=yes
 ```
-5. Build and install:\
+5. Build and install:
 ```
 make; make install
 ```
 
 # Installing uisng the Homebrew:
-1. Check if `brew` is installed in terminal, otherwise install Homebrew using:\
-`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
+1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)
+```
 2. Remove previous vim and install:
 ```
 brew remove vim
