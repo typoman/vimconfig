@@ -48,4 +48,4 @@ git push origin master
 `b`   go to previous word\
 `\a`  match all the words under cursor
 `y`   yank (copy)\
-`ysiw'<t>` adds <t> around the current word, <t> could be anything
+`ysiw'<t>` adds a \<t\> around the current word, <t> could be anything
