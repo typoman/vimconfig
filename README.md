@@ -105,7 +105,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `}` go to next paragraph\
 `{` go to previous paragraph\
 `fa` find the next character 'a' on the current line, use ';' to move to next one\
-`ta` find the previous character 'a' on the current line\ 
+`ta` find the previous character 'a' on the current line\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
 `u` make the selection lowercase\
 `U` make the selection uppercase\
