@@ -80,5 +80,5 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ds'` delete the character ' surrounding the word under the cursor\
 `1z=` fix the spelling under the cursor\
 `[s` go to previous bad spelling\
-`''` or ````` go to previous cursor position\
+`''` or ``` `` ``` go to previous cursor position\
 
