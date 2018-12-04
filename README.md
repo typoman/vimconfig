@@ -4,10 +4,10 @@ This is notes for using the vim with the configurations inside this repo. Also t
 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)`
 2. Check if `make` is installed in terminal:\
 `make --version`\
-   If make is not installed, A window pops up instructing you to install the developer tools.\
+   If make is not installed, A window pops up instructing you to install the developer tools.
 3. Download from git:\
-`https://github.com/vim/vim`\
-4. Configure:\
+`https://github.com/vim/vim`
+4. Configure:
 ```
 cd vim
 cd src
