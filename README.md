@@ -90,8 +90,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `zg` learn spelling of the word under cursor\
 `''` or ``` `` ``` go to previous cursor position\
 `42gg` go to line 42\
-`da)` delete all the text inside the parantheses, same goes for brackets or braces
-`ct` change the text inside the tag (e.g: html, xml)
-`bd` close the file/buffer
-`bd!` close the file and discard changes
+`da)` delete all the text inside the parantheses, same goes for brackets or braces\
+`ct` change the text inside the tag (e.g: html, xml)\
+`bd` close the file/buffer\
+`bd!` close the file and discard changes\
 
