@@ -24,7 +24,7 @@ V   go to visual line mode (select lines)\
 h   move cursor to the left\
 j   move cursor down\
 k   move cursor up\
-l   move cursor right\
+l   move cursor right
 
 ## Normal/Visual Mode shortcuts:
 cw delete the word and go to insert mode\
