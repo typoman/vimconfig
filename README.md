@@ -18,6 +18,10 @@ cd src
 ```
 make; make install
 ```
+6. Install silver searcher:
+```
+brew install the_silver_searcher
+```
 
 # Installing using the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
@@ -41,6 +45,7 @@ git remote add origin https://github.com/typoman/vimconfig.git # only needed for
 git push origin master
 ```
 After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim. Of course you need to change the url if you're copying this repo for yourself.
+
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this garantees more efficient keystrokes and less hand movements while editing text.
 
@@ -60,6 +65,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `o` create a new line after current line and go to insert mode\
 `:w` save the file\
 `:q!` close the file without saving\
+`:e fileName` edit filename
 `ZZ` close the window/save and close\
 `\re` show most recent opened files\
 `tab` switch between opened files (buffers)\
@@ -74,7 +80,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `w`   go to start of the next word\
 `e`   go to end of the next word\
 `b`   go to previous word\
-`\a`  match all the words under cursor\
+`<space>a`  match all the words under cursor\
 `y`   yank (copy)\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
@@ -82,4 +88,5 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `[s` go to previous bad spelling\
 `zg` learn spelling of the word under cursor\
 `''` or ``` `` ``` go to previous cursor position\
+`42gg` go to line 42
 

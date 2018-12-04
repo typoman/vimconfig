@@ -74,6 +74,7 @@ let g:pymode_doc_bind = 'K'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:pymode_folding = 0
+let mapleader = " "
 autocmd FileType python set colorcolumn=180
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
