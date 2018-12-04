@@ -18,9 +18,9 @@ cd src
 ```
 make; make install
 ```
-6. Install silver searcher:
+6. Install ack:
 ```
-brew install the_silver_searcher
+brew install ack
 ```
 
 # Installing using the Homebrew:
@@ -63,6 +63,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `l`   move cursor right\
 `cw` delete the word and go to insert mode\
 `D` delete characters from cursor until end of the line\
+`s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
 `:w` save the file\
 `:q!` close the file without saving\
@@ -99,3 +100,10 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` delete the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
+`}` go to next paragraph
+`{` go to previous paragraph
+`fa` find the next character 'a' on the current line, use ';' to move to next one\
+`ta` find the previous character 'a' on the current line\ 
+
+
+
