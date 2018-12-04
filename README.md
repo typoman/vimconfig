@@ -8,7 +8,8 @@ This is notes for using the vim with the configurations inside this repo. Also t
 3. Download from git:\
 `https://github.com/vim/vim`
 4. Configure:
-   ```
+   
+```
 cd vim
 cd src
 ./configure --with-features=huge --enable-python3interp=yes
