@@ -83,7 +83,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `e`   go to end of the next word\
 `b`   go to previous word\
 `<space>a`  match all the words under cursor\
-`y`   yank (copy)\
+`y`   yank selection (copy)\
+`yy` yank the line\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
 `ci'` change the text inside the quotes\
