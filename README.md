@@ -1,10 +1,9 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # Building vim from the source on OS X (High Sierra):
-1. Check if `make` is installed in terminal:
+1. Check if `make` is installed in terminal, If make is not installed, A window pops up instructing you to install the developer tools:
 ```
 make --version
 ```
-If make is not installed, A window pops up instructing you to install the developer tools.\
 2. Download from git:
 ```
 https://github.com/vim/vim
