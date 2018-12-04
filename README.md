@@ -62,7 +62,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `k`   move cursor up\
 `l`   move cursor right\
 `cw` delete the word and go to insert mode\
-`.` repeat last sequence of commands
+`.` repeat last sequence of commands\
 `D` delete characters from cursor until end of the line\
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
