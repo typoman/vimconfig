@@ -20,10 +20,10 @@ cd src
 # Backup this configuration to the current repo:
 ```
 cd ~/.vim
-git init
+git init # only needed for the first time
 git add *
 git commit -am "New changes to the configurations"
-git remote add origin https://github.com/typoman/vimconfig.git
+git remote add origin https://github.com/typoman/vimconfig.git # only needed for the first time
 git push origin master
 ```
 
@@ -35,12 +35,12 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `i`   go to insert mode\
 `v`   go to visual mode (select characters)\
 `V`   go to visual line mode (select lines)\
+
+## Normal/Visual Mode shortcuts:
 `h`   move cursor to the left\
 `j`   move cursor down\
 `k`   move cursor up\
 `l`   move cursor right
-
-## Normal/Visual Mode shortcuts:
 `cw` delete the word and go to insert mode\
 `D` delete characters from cursor until end of the line\
 `o` create a new line after current line and go to insert mode\
