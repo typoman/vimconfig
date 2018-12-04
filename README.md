@@ -26,25 +26,25 @@ k   move cursor up
 l   move cursor right
 
 ## Normal/Visual Mode shortcuts:
-cw delete the word and go to insert mode
-D delete characters from cursor until end of the line
-o create a new line after current line and go to insert mode
-:w save the file
-:q! close the file without saving
-ZZ close the window/save and close
-\re show most recent opened files
-tab switch between opened files (buffers)
-dd  delete the current line and copy it
-G go to end of the file
-gg  go to first character in the file
-\r  run in python
-\rf run in Robofont
-/   search the file (including regular expressions)
-n   go to next match term in search
-N   go to previous match
-w   go to start of the next word
-e   go to end of the next word
-b   go to previous word
+cw delete the word and go to insert mode\
+D delete characters from cursor until end of the line\
+o create a new line after current line and go to insert mode\
+:w save the file\
+:q! close the file without saving\
+ZZ close the window/save and close\
+\re show most recent opened files\
+tab switch between opened files (buffers)\
+dd  delete the current line and copy it\
+G go to end of the file\
+gg  go to first character in the file\
+\r  run in python\
+\rf run in Robofont\
+/   search the file (including regular expressions)\
+n   go to next match term in search\
+N   go to previous match\
+w   go to start of the next word\
+e   go to end of the next word\
+b   go to previous word\
 \a  match all the words under cursor
-y   yank (copy)
+y   yank (copy)\
 
