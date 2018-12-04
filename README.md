@@ -19,7 +19,7 @@ cd src
 make; make install
 ```
 
-# Installing uisng the Homebrew:
+# Installing using the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)
@@ -77,4 +77,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `\a`  match all the words under cursor
 `y`   yank (copy)\
 `ysiw<t>` adds a \<t\> around the current word, <t> could be anything\
-`ds'` delete the character ' sorrounding the word under the cursor\
+`ds'` delete the character ' surrounding the word under the cursor\
+`1z=` fix the spelling under the cursor
+`[s` go to previous bad spelling
+`''` or `\`\`` go to previous cursor position
+
