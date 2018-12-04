@@ -52,6 +52,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 ## Main shortcuts:
 `Esc` go to normal mode\
 `i`   go to insert mode\
+`a`   go to insert mode and put cursor after the character\
 `v`   go to visual mode (select characters)\
 `V`   go to visual line mode (select lines)
 
@@ -91,7 +92,10 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `''` or ``` `` ``` go to previous cursor position\
 `42gg` go to line 42\
 `da)` delete all the text inside the parantheses, same goes for brackets or braces\
-`ct` change the text inside the tag (e.g: html, xml)\
-`bd` close the file/buffer\
+`ct` change the text enclosed by the tag (e.g: html, xml)\
+`di>` delete the tag info
+`bd` close the file buffer\
 `bd!` close the file and discard changes\
-
+`cii` change the indentation scope (delete the indentation scope and go to insert mode)\
+`dii` delete the indentation scope\
+`vii` select the indentation scope, adding more ii increases the indentation level\
