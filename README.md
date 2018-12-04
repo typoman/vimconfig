@@ -67,7 +67,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `o` create a new line after current line and go to insert mode\
 `:w` save the file\
 `:q!` close the file without saving\
-`:e fileName` edit filename
+`:e fileName` edit filename\
 `ZZ` close the window/save and close\
 `<space>re` show most recent opened files\
 `tab` switch between opened files (buffers)\
@@ -86,7 +86,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `y`   yank (copy)\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
-`ci'` change the text inside the quotes
+`ci'` change the text inside the quotes\
 `1z=` fix the spelling under the cursor\
 `[s` go to previous bad spelling\
 `zg` learn spelling of the word under cursor\
@@ -94,16 +94,20 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `42gg` go to line 42\
 `da)` delete all the text inside the parantheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
-`di>` delete the tag info
+`di>` delete the tag info\
 `bd` close the file buffer\
 `bd!` close the file and discard changes\
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` delete the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
-`}` go to next paragraph
-`{` go to previous paragraph
+`}` go to next paragraph\
+`{` go to previous paragraph\
 `fa` find the next character 'a' on the current line, use ';' to move to next one\
 `ta` find the previous character 'a' on the current line\ 
-
+`~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
+`u` make the selection lowercase\
+`U` make the selection uppercase\
+`>` increase indentation\
+`<` decrease indentation\
 
 

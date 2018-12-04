@@ -101,6 +101,7 @@ map <silent> <leader>ss :echo "hi<" . synIDattr(synID(line("."),col("."),1),"nam
 autocmd BufRead,BufNewFile *.md setlocal spell
 set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
+set tabstop=4
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
