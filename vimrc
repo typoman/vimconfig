@@ -83,6 +83,7 @@ nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :MRU<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
+nnoremap <Leader>gr :!cd ~/.vim;git init;git add *;git commit -am "New changes to the configurations";git remote add origin https://github.com/typoman/vimconfig.git;git push origin master
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
