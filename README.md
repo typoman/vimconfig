@@ -77,5 +77,5 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `b`   go to previous word\
 `\a`  match all the words under cursor
 `y`   yank (copy)\
-`ysiw<t>` adds a \<t\> around the current word, <t> could be anything
-`ds'` delete the character ' sorrounding the word under the cursor
+`ysiw<t>` adds a \<t\> around the current word, <t> could be anything\
+`ds'` delete the character ' sorrounding the word under the cursor\
