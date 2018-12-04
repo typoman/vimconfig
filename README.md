@@ -38,14 +38,14 @@ git push origin master
 `dd`  delete the current line and copy it\
 `G` go to end of the file\
 `gg`  go to first character in the file\
-\r  run in python\
-\rf run in Robofont\
-/   search the file (including regular expressions)\
-n   go to next match term in search\
-N   go to previous match\
-w   go to start of the next word\
-e   go to end of the next word\
-b   go to previous word\
-\a  match all the words under cursor
-y   yank (copy)\
-
+`\r`  run in python\
+`\rf` run in Robofont\
+`/`   search the file (including regular expressions)\
+`n`   go to next match term in search\
+`N`   go to previous match\
+`w`   go to start of the next word\
+`e`   go to end of the next word\
+`b`   go to previous word\
+`\a`  match all the words under cursor
+`y`   yank (copy)\
+`ysiw'<t>` adds <t> around the current word, <t> could be anything
