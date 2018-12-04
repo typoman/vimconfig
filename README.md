@@ -17,27 +17,27 @@ git push origin master
 
 # Keyboard shortcuts:
 ## Main shortcuts:
-Esc go to normal mode\
-i   go to insert mode\
-v   go to visual mode (select characters)\
-V   go to visual line mode (select lines)\
-h   move cursor to the left\
-j   move cursor down\
-k   move cursor up\
-l   move cursor right
+`Esc` go to normal mode\
+`i`   go to insert mode\
+`v`   go to visual mode (select characters)\
+`V`   go to visual line mode (select lines)\
+`h`   move cursor to the left\
+`j`   move cursor down\
+`k`   move cursor up\
+`l`   move cursor right
 
 ## Normal/Visual Mode shortcuts:
-cw delete the word and go to insert mode\
-D delete characters from cursor until end of the line\
-o create a new line after current line and go to insert mode\
-:w save the file\
-:q! close the file without saving\
-ZZ close the window/save and close\
-\re show most recent opened files\
-tab switch between opened files (buffers)\
-dd  delete the current line and copy it\
-G go to end of the file\
-gg  go to first character in the file\
+`cw` delete the word and go to insert mode\
+`D` delete characters from cursor until end of the line\
+`o` create a new line after current line and go to insert mode\
+`:`w save the file\
+`:q!` close the file without saving\
+`ZZ` close the window/save and close\
+`\re` show most recent opened files\
+`tab` switch between opened files (buffers)\
+`dd`  delete the current line and copy it\
+`G` go to end of the file\
+`gg`  go to first character in the file\
 \r  run in python\
 \rf run in Robofont\
 /   search the file (including regular expressions)\
