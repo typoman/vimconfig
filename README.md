@@ -48,7 +48,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `Esc` go to normal mode\
 `i`   go to insert mode\
 `v`   go to visual mode (select characters)\
-`V`   go to visual line mode (select lines)\
+`V`   go to visual line mode (select lines)
 
 ## Normal/Visual Mode shortcuts:
 `h`   move cursor to the left\
@@ -76,7 +76,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `b`   go to previous word\
 `\a`  match all the words under cursor\
 `y`   yank (copy)\
-`ysiw<t>` adds a \<t\> around the current word, <t> could be anything\
+`ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
 `1z=` fix the spelling under the cursor\
 `[s` go to previous bad spelling\
