@@ -32,7 +32,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
 Plug 'hdima/python-syntax'
-Plug '  yuttie/comfortable-motion.vim'
+Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 
 call plug#end()
@@ -89,6 +89,7 @@ nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 nnoremap <Leader>vr :source .vim/vimrc<CR>
 nnoremap cw ciw
+nnoremap ct cit
 let g:multi_cursor_select_all_word_key = '<leader>a'
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
@@ -99,3 +100,14 @@ map <silent> <leader>ss :echo "hi<" . synIDattr(synID(line("."),col("."),1),"nam
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 autocmd BufRead,BufNewFile *.md setlocal spell
 set spellfile=$HOME/.vim-spell-en.utf-8.add
+set complete+=kspell
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>

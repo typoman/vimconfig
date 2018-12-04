@@ -84,9 +84,14 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `y`   yank (copy)\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
+`ci'` change the text inside the quotes
 `1z=` fix the spelling under the cursor\
 `[s` go to previous bad spelling\
 `zg` learn spelling of the word under cursor\
 `''` or ``` `` ``` go to previous cursor position\
-`42gg` go to line 42
+`42gg` go to line 42\
+`da)` delete all the text inside the parantheses, same goes for brackets or braces
+`ct` change the text inside the tag (e.g: html, xml)
+`bd` close the file/buffer
+`bd!` close the file and discard changes
 
