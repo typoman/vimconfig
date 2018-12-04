@@ -16,14 +16,14 @@ git push origin master
 
 # Keyboard shortcuts:
 ## Main shortcuts:
-Esc go to normal mode
-i   go to insert mode
-v   go to visual mode (select characters)
-V   go to visual line mode (select lines)
-h   move cursor to the left
-j   move cursor down
-k   move cursor up
-l   move cursor right
+Esc go to normal mode\
+i   go to insert mode\
+v   go to visual mode (select characters)\
+V   go to visual line mode (select lines)\
+h   move cursor to the left\
+j   move cursor down\
+k   move cursor up\
+l   move cursor right\
 
 ## Normal/Visual Mode shortcuts:
 cw delete the word and go to insert mode\
