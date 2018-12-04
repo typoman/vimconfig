@@ -98,3 +98,4 @@ map <silent> <leader>ss :echo "hi<" . synIDattr(synID(line("."),col("."),1),"nam
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 autocmd BufRead,BufNewFile *.md setlocal spell
+set spellfile=$HOME/.vim-spell-en.utf-8.add
