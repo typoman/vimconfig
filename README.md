@@ -74,11 +74,11 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `w`   go to start of the next word\
 `e`   go to end of the next word\
 `b`   go to previous word\
-`\a`  match all the words under cursor
+`\a`  match all the words under cursor\
 `y`   yank (copy)\
 `ysiw<t>` adds a \<t\> around the current word, <t> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
 `1z=` fix the spelling under the cursor\
 `[s` go to previous bad spelling\
-`''` or ```` go to previous cursor position\
+`''` or `\``` go to previous cursor position\
 
