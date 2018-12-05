@@ -34,6 +34,7 @@ Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
 Plug 'hdima/python-syntax'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 
