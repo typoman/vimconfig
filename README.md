@@ -93,7 +93,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
 `Vx` delete the line\
-`dd` cut the current line and copy it\
+`dd` cut the current line\
 `<space>a` match all the words under cursor\
 `y` yank selection (copy)\
 `yy` yank the line\
