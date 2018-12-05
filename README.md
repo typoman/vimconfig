@@ -44,10 +44,10 @@ git commit -am "New changes to the configurations"
 git remote add origin https://github.com/typoman/vimconfig.git # only needed for the first time
 git push origin master
 ```
-After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim. Of course you need to change the url if you're copying this repo for yourself.
+After running the above commands, updating the repo can be achieved using `\gr` shortcut inside the vim. Of course you need to change the URL if you're copying this repo for yourself.
 
 # Keyboard shortcuts:
-Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this garantees more efficient keystrokes and less hand movements while editing text.
+Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this guarantees more efficient keystrokes and less hand movements while editing text.
 
 ## Main shortcuts:
 `Esc` go to normal mode\
@@ -57,32 +57,31 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `V`   go to visual line mode (select lines)
 
 ## Normal/Visual Mode shortcuts:
+### Navigation
 `h`   move cursor to the left\
 `j`   move cursor down\
 `k`   move cursor up\
 `l`   move cursor right\
-`cw` delete the word and go to insert mode\
-`.` repeat last sequence of commands\
-`D` delete characters from cursor until end of the line\
-`s` delete the character under the cursor and go to insert mode\
-`o` create a new line after current line and go to insert mode\
-`:w` save the file\
-`:q!` close the file without saving\
-`:e fileName` edit filename\
-`ZZ` close the window/save and close\
-`<space>re` show most recent opened files\
-`tab` switch between opened files (buffers)\
-`dd`  delete the current line and copy it\
+`}` go to next paragraph\
+`{` go to previous paragraph\
 `G` go to end of the file\
 `gg`  go to first character in the file\
-`<space>r`  run in python\
-`<space>rf` run in Robofont\
-`/`   search the file (including regular expressions)\
 `n`   go to next match term in search\
 `N`   go to previous match\
 `w`   go to start of the next word\
 `e`   go to end of the next word\
 `b`   go to previous word\
+`[s` go to previous bad spelling\
+`''` go to previous cursor position, or you can use ``` `` ``` \
+`/`   search the file (including regular expressions)\
+`42gg` go to line 42\
+### Editing Text
+`cw` delete the word and go to insert mode\
+`.` repeat last sequence of commands\
+`D` delete characters from cursor until end of the line\
+`s` delete the character under the cursor and go to insert mode\
+`o` create a new line after current line and go to insert mode\
+`dd`  delete the current line and copy it\
 `<space>a`  match all the words under cursor\
 `y`   yank selection (copy)\
 `yy` yank the line\
@@ -90,10 +89,17 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ds'` delete the character ' surrounding the word under the cursor\
 `ci'` change the text inside the quotes\
 `1z=` fix the spelling under the cursor\
-`[s` go to previous bad spelling\
 `zg` learn spelling of the word under cursor\
-`''` or ``` `` ``` go to previous cursor position\
-`42gg` go to line 42\
+### Handling files
+`:w` save the file\
+`:q!` close the file without saving\
+`:e fileName` edit filename. You can use <tab> for auto completion\
+`ZZ` close the window/save and close\
+`<space>re` show most recent opened files\
+`tab` switch between opened files (buffers)\
+# Coding
+`<space>r`  run in python\
+`<space>rf` run in Robofont\
 `da)` delete all the text inside the parantheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
 `di>` delete the tag info\
@@ -102,8 +108,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` delete the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
-`}` go to next paragraph\
-`{` go to previous paragraph\
 `fa` find the next character 'a' on the current line, use ';' to move to next one\
 `ta` find the previous character 'a' on the current line\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
