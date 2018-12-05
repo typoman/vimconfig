@@ -118,3 +118,4 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+set scrolloff=5
