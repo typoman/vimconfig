@@ -92,23 +92,23 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ci'` change the text inside the quotes\
 `1z=` fix the spelling under the cursor\
 `zg` learn spelling of the word under cursor\
-### Handling files
-`<space>s` save the file\
-`<space>cc` close the file without saving\
-`<space>c` close the file\
-`<space>re` show most recent opened files\
-`:e fileName` edit filename. You can use <tab> for auto completion\
-`ZZ` close the window/save and close\
-`tab` switch between opened files (buffers)\
-# Coding
-`<space>r`  run in python\
-`<space>rf` run in Robofont\
 `da)` delete all the text inside the parantheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
 `di>` delete the tag info\
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` delete the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
+### Handling files
+`<space>s` save the file\
+`<space>cc` close the file without saving\
+`<space>c` close the file\window\
+`<space>re` show most recent opened files\
+`:e fileName` edit filename. You can use <tab> for auto completion\
+`ZZ` save and close\
+`tab` switch between opened files (buffers)\
+# Coding
+`<space>r`  run in python\
+`<space>rf` run in Robofont\
 `fa` find the next character 'a' on the current line, use ';' to move to next one\
 `ta` find the previous character 'a' on the current line\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
