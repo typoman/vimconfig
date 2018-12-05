@@ -73,51 +73,48 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `b`   go to previous word\
 `[s` go to previous bad spelling\
 `''` go to previous cursor position, or you can use ``` `` ``` \
+`fa` find the next character 'a' on the current line, use ';' to move to next one\
+`ta` find the previous character 'a' on the current line\
 `/`   search the file (including regular expressions)\
 `42gg` go to line 42\
 ### Editing Text
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
-`D` delete characters from cursor until end of the line\
+`D` cut characters from cursor until end of the line\
 `x` delete the character under the cursor\
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
 `Vx` delete the line\
-`dd`  delete the current line and copy it\
+`dd` cut the current line and copy it\
 `<space>a`  match all the words under cursor\
 `y` yank selection (copy)\
 `yy` yank the line\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
-`ds'` delete the character ' surrounding the word under the cursor\
+`ds'` cut the character ' surrounding the word under the cursor\
 `ci'` change the text inside the quotes\
 `1z=` fix the spelling under the cursor\
 `zg` learn spelling of the word under cursor\
-`da)` delete all the text inside the parantheses, same goes for brackets or braces\
+`da)` cut all the text inside the parantheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
-`di>` delete the tag info\
+`di>` cut the tag info\
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
-`dii` delete the indentation scope\
+`dii` cut the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
+`~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
+`u` make the selection lowercase\
+`U` make the selection uppercase\
 ### Handling files
 `<space>s` save the file\
 `<space>cc` close the file without saving\
 `<space>c` close the file\window\
 `<space>re` show most recent opened files\
+`<space>n` new untitled file\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` save and close\
 `tab` switch between opened files (buffers)\
 # Coding
 `<space>r`  run in python\
 `<space>rf` run in Robofont\
-`fa` find the next character 'a' on the current line, use ';' to move to next one\
-`ta` find the previous character 'a' on the current line\
-`~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
-`u` make the selection lowercase\
-`U` make the selection uppercase\
 `>` increase indentation\
 `<` decrease indentation\
-`<space>n` new untitled file\
-`<space>c` close the file\
-`<space>cc` close the file without saving\
-`<space>s` save the file\
 
