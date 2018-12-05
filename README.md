@@ -82,9 +82,10 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `x` delete the character under the cursor\
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
+`Vx` delete the line\
 `dd`  delete the current line and copy it\
 `<space>a`  match all the words under cursor\
-`y`   yank selection (copy)\
+`y` yank selection (copy)\
 `yy` yank the line\
 `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
 `ds'` delete the character ' surrounding the word under the cursor\
@@ -95,9 +96,9 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>s` save the file\
 `<space>cc` close the file without saving\
 `<space>c` close the file\
+`<space>re` show most recent opened files\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` close the window/save and close\
-`<space>re` show most recent opened files\
 `tab` switch between opened files (buffers)\
 # Coding
 `<space>r`  run in python\
@@ -105,8 +106,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `da)` delete all the text inside the parantheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
 `di>` delete the tag info\
-`bd` close the file buffer\
-`bd!` close the file and discard changes\
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` delete the indentation scope\
 `vii` select the indentation scope, adding more ii increases the indentation level\
