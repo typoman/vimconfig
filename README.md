@@ -6,7 +6,7 @@ make --version
 ```
 2. Download from git:
 ```
-https://github.com/vim/vim
+git clone https://github.com/vim/vim
 ```
 3. Configure:
 ```
@@ -21,6 +21,11 @@ make; make install
 6. Install ack:
 ```
 brew install ack
+```
+7. Install the configuration:
+```
+cd ~
+git clone https://github.com/typoman/vimconfig
 ```
 
 # Installing using the Homebrew:
