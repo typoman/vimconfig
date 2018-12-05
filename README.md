@@ -22,11 +22,6 @@ make; make install
 ```
 brew install ack
 ```
-7. Install the configuration:
-```
-cd ~
-git clone https://github.com/typoman/vimconfig
-```
 
 # Installing using the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
@@ -38,6 +33,12 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)
 brew remove vim
 brew cleanup
 brew install vim --with-python3
+```
+
+# Install this configuration:
+```
+cd ~
+git clone https://github.com/typoman/vimconfig
 ```
 
 # Backup this configuration to the current repo:
@@ -117,7 +118,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` save and close\
 `tab` switch between opened files (buffers)\
-# Coding
+### Coding
 `<space>r`  run in python\
 `<space>rf` run in Robofont\
 `>` increase indentation\
