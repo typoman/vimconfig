@@ -79,6 +79,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
 `D` delete characters from cursor until end of the line\
+`x` delete the character under the cursor\
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
 `dd`  delete the current line and copy it\
@@ -91,8 +92,9 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `1z=` fix the spelling under the cursor\
 `zg` learn spelling of the word under cursor\
 ### Handling files
-`:w` save the file\
-`:q!` close the file without saving\
+`<space>s` save the file\
+`<space>cc` close the file without saving\
+`<space>c` close the file\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` close the window/save and close\
 `<space>re` show most recent opened files\

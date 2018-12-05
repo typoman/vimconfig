@@ -35,7 +35,7 @@ Plug 'hdima/python-syntax'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
-
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 colorscheme bahman
