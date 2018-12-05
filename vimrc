@@ -55,7 +55,7 @@ set cursorline
 set showmatch
 set termbidi
 set encoding=utf-8
-set guifont=Blex:h14
+set guifont=BlexMono_Nerd_Font_Mono:h14
 set ignorecase 
 set smartcase
 set wildmenu
@@ -84,7 +84,8 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :MRU<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
-nnoremap <leader>s :w<CR>nnoremap <leader>cc :bd!<CR>
+nnoremap <leader>cc :bd!<CR>
+nnoremap <leader>s :w<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
@@ -114,3 +115,5 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
