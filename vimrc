@@ -36,6 +36,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
+" Plug 'mg979/vim-visual-multi', {'branch': 'test'}
 call plug#end()
 
 colorscheme bahman
@@ -94,7 +95,7 @@ nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New ch
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-nnoremap <Leader>vr :source .vim/vimrc<CR>
+nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap cw ciw
 nnoremap ct cit
 let g:multi_cursor_select_all_word_key = '<leader>a'

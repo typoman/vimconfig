@@ -12,7 +12,6 @@ set t_Co=256
 let g:colors_name = "bahman"
 
 "hi CTagsMember -- no settings --
-hi SpecialKey guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=232 ctermbg=162 cterm=NONE
 "hi CTagsGlobalConstant -- no settings --
 "hi Ignore -- no settings --
 hi Normal guifg=#F9F9FF guibg=#1e1d21 guisp=#1e1d21 gui=NONE ctermfg=189 ctermbg=NONE cterm=NONE
@@ -104,3 +103,4 @@ hi PythonString guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=221 ctermbg
 hi pythonClass guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=39 ctermbg=NONE cterm=NONE
 hi pythonFunction guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi pythonSelf guifg=#5fffaf guibg=NONE guisp=NONE gui=NONE ctermfg=85 ctermbg=NONE cterm=bold
+hi SpecialKey guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=232 ctermbg=162 cterm=NONE
