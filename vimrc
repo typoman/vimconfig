@@ -61,6 +61,8 @@ set ignorecase
 set smartcase
 set wildmenu
 set foldmethod=indent
+set undofile
+set undodir=~/.vimUndoHistory
 let g:pymode = 1
 let g:pymode_python = 'python3'
 let python_highlight_all=1
@@ -87,7 +89,7 @@ nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>
 nnoremap <leader>s :w<CR>
-nnoremap <Leader>vr :source $MYVIMRC<CR>
+nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
@@ -119,3 +121,4 @@ nnoremap <Down> :echoe "Use j"<CR>
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 set scrolloff=5
+set listchars=eol:↵,tab:⇥\

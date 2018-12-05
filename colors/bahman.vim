@@ -12,6 +12,7 @@ set t_Co=256
 let g:colors_name = "bahman"
 
 "hi CTagsMember -- no settings --
+hi SpecialKey guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=232 ctermbg=162 cterm=NONE
 "hi CTagsGlobalConstant -- no settings --
 "hi Ignore -- no settings --
 hi Normal guifg=#F9F9FF guibg=#1e1d21 guisp=#1e1d21 gui=NONE ctermfg=189 ctermbg=NONE cterm=NONE
@@ -84,7 +85,6 @@ hi Cursor guifg=#192224 guibg=#F9F9F9 guisp=#F9F9F9 gui=NONE ctermfg=235 ctermbg
 hi SpellLocal guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 hi Error guifg=#A1A6A8 guibg=#912C00 guisp=#912C00 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 hi PMenu guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=NONE ctermfg=235 ctermbg=66 cterm=NONE
-hi SpecialKey guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 hi Constant guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi Tag guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi String guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=104 ctermbg=NONE cterm=NONE
