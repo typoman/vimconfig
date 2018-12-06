@@ -77,6 +77,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `{` go to previous paragraph\
 `G` go to end of the file\
 `gg` go to first character in the file\
+`/` search the file (including regular expressions)\
 `n` go to next match term in search\
 `N` go to previous match\
 `w` go to start of the next word\
@@ -86,7 +87,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `''` go to previous cursor position, or you can use ``` `` ``` \
 `fa` find the next character 'a' on the current line, use ';' to move to next one\
 `ta` find the previous character 'a' on the current line\
-`/` search the file (including regular expressions)\
 `42gg` go to line 42\
 `ma` mark the position of cursor and store it in `a`\
 `'a` go to the mark position `a`\
