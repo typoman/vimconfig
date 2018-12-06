@@ -24,7 +24,6 @@ Plug 'tpope/vim-surround'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chiedo/vim-dr-replace'
-Plug 'yegappan/mru'
 Plug 'adelarsq/vim-matchit'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -85,7 +84,7 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>re :MRU<CR>
+nnoremap <leader>re :CtrlPMRU<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>

@@ -38,6 +38,8 @@ brew install vim --with-python3
 # Install this configuration:
 ```
 cd ~
+mkdir .vim
+cd .vim
 git clone https://github.com/typoman/vimconfig
 ```
 
