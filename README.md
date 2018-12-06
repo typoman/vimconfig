@@ -88,8 +88,9 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ta` find the previous character 'a' on the current line\
 `/` search the file (including regular expressions)\
 `42gg` go to line 42\
-`ma` mark the position of cursor and store it in `a`
-`'a` go to the mark position `a`
+`ma` mark the position of cursor and store it in `a`\
+`'a` go to the mark position `a`\
+`<space>/` fuzzy search the current file (buffer)\
 
 ### Editing Text
 `cw` delete the word and go to insert mode\

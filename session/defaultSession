@@ -4,16 +4,17 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/
+cd ~/.vim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +142 .vim/vimrc
-badd +0 .vim/README.md
+badd +93 vimrc
+badd +1 README.md
+badd +36 ~/test.py
 argglobal
 silent! argdel *
-edit .vim/README.md
+edit vimrc
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -31,12 +32,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 93 - ((34 * winheight(0) + 20) / 41)
+let s:l = 34 - ((19 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-93
-normal! 0
+34
+normal! 05|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf

@@ -10,12 +10,13 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mileszs/ack.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
@@ -27,16 +28,18 @@ Plug 'chiedo/vim-dr-replace'
 Plug 'adelarsq/vim-matchit'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
 Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
+Plug 'SirVer/ultisnips'
 Plug 'hdima/python-syntax'
+Plug 'honza/vim-snippets'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
 Plug 'mg979/vim-visual-multi'
 Plug 'wellle/targets.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -86,7 +89,10 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>re :CtrlPMRU<CR>
+nnoremap <leader>re :History<CR>
+nnoremap <leader>/ :BLines<CR>
+nnoremap <Leader>b :Buffers<CR>
+" nnoremap : :Commands<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>
@@ -97,7 +103,6 @@ nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap cw ciw
 nnoremap ct cit
 let g:multi_cursor_select_all_word_key = '<leader>a'
@@ -140,4 +145,19 @@ let g:VM_mouse_mappings             = 1
 " automatically source last used session when no files were given to Vim
 " autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
 autocmd VimEnter * :SL defaultSession
-autocmd BufWritePost * :SS defaultSession
+" autocmd BufWritePost * :SS defaultSession
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
