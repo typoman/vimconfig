@@ -90,7 +90,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `42gg` go to line 42\
 `ma` mark the position of cursor and store it in `a`\
 `'a` go to the mark position `a`\
-`<space>/` fuzzy search the current file (buffer)\
+`<space>/` fuzzy find the current file (buffer)\
+`<space>b` fuzzy find the opened buffer names\
 
 ### Editing Text
 `cw` delete the word and go to insert mode\
@@ -138,5 +139,5 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>rf` run in Robofont\
 `>` increase indentation\
 `<` decrease indentation\
-
-
+`<Ctrl-n>` select the next word matching the pattern under cursor/selection\
+`<space>a` select all the matching patterns under cursor/selection
