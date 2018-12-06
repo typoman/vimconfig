@@ -91,7 +91,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ma` mark the position of cursor and store it in `a`\
 `'a` go to the mark position `a`\
 `<space>/` fuzzy find the current file (buffer)\
-`<space>b` fuzzy find the opened buffer names\
 
 ### Editing Text
 `cw` delete the word and go to insert mode\
@@ -127,10 +126,10 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>re` show most recent opened files\
 `<space>b` explore buffers in fuzzy mode\
 `<space>n` new untitled file\
+`<space>t` Open the NerdTree plugin\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` save and close\
 `tab` switch between opened files (buffers)\
-`<space>t` Open the NerdTree plugin\
 `:SS` save the current session\
 `:SL` load a saved session\
 
