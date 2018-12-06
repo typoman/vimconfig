@@ -35,7 +35,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
-Plug 'mg979/vim-visual-multi', {'branch': 'test'}
+Plug 'mg979/vim-visual-multi'
 Plug 'wellle/targets.vim'
 
 call plug#end()
@@ -113,19 +113,31 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
 set tabstop=4
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+let g:VM_leader = '\'
 let g:startify_session_dir = '~/.vim/session'
-let g:startify_session_autoload = 1
 let g:startify_change_to_dir = 1
 let g:startify_session_persistence = 1
 set scrolloff=5
 set listchars=eol:↵,tab:⇥\
+let g:VM_no_meta_mappings = 1
+let g:VM_maps = {}
+let g:VM_maps["Select All"]        = '<leader>a'
+let g:VM_maps["Visual All"]        = '<leader>a'
+let g:VM_maps["Align"]             = '<leader>A'
+let g:VM_maps["Add Cursor Down"]   = '<C-j>'
+let g:VM_maps["Add Cursor Up"]     = '<C-k>'
+let g:VM_mouse_mappings             = 1
+" automatically source last used session when no files were given to Vim
+" autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
+autocmd VimEnter * :SL defaultSession
+autocmd BufWritePost * :SS defaultSession

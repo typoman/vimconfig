@@ -65,6 +65,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `V` go to visual line mode (select lines)
 
 ## Normal/Visual Mode shortcuts:
+
 ### Navigation
 `h` move cursor to the left\
 `j` move cursor down\
@@ -87,6 +88,9 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ta` find the previous character 'a' on the current line\
 `/` search the file (including regular expressions)\
 `42gg` go to line 42\
+`ma` mark the position of cursor and store it in `a`
+`'a` go to the mark position `a`
+
 ### Editing Text
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
@@ -113,6 +117,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
 `u` make the selection lowercase\
 `U` make the selection uppercase\
+
 ### Handling files
 `<space>s` save the file\
 `<space>cc` close the file without saving\
@@ -124,9 +129,13 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ZZ` save and close\
 `tab` switch between opened files (buffers)\
 `<space>t` Open the NerdTree plugin\
+`:SS` save the current session\
+`:SL` load a saved session\
+
 ### Coding
 `<space>r` run in python\
 `<space>rf` run in Robofont\
 `>` increase indentation\
 `<` decrease indentation\
+
 
