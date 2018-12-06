@@ -8,7 +8,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
@@ -35,7 +35,9 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
-" Plug 'mg979/vim-visual-multi', {'branch': 'test'}
+Plug 'mg979/vim-visual-multi', {'branch': 'test'}
+Plug 'wellle/targets.vim'
+
 call plug#end()
 
 colorscheme bahman
@@ -95,6 +97,7 @@ nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap cw ciw
 nnoremap ct cit
 let g:multi_cursor_select_all_word_key = '<leader>a'
@@ -120,5 +123,9 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_session_autoload = 1
+let g:startify_change_to_dir = 1
+let g:startify_session_persistence = 1
 set scrolloff=5
 set listchars=eol:↵,tab:⇥\

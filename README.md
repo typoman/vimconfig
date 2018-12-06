@@ -118,6 +118,7 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>cc` close the file without saving\
 `<space>c` close the file\window\
 `<space>re` show most recent opened files\
+`<space>b' explore buffers in fuzzy mode\
 `<space>n` new untitled file\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` save and close\
