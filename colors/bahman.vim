@@ -11,20 +11,7 @@ endif
 set t_Co=256
 let g:colors_name = "bahman"
 
-"hi CTagsMember -- no settings --
-"hi CTagsGlobalConstant -- no settings --
-"hi Ignore -- no settings --
 hi Normal guifg=#F9F9FF guibg=#1e1d21 guisp=#1e1d21 gui=NONE ctermfg=189 ctermbg=NONE cterm=NONE
-"hi CTagsImport -- no settings --
-"hi CTagsGlobalVariable -- no settings --
-"hi EnumerationValue -- no settings --
-"hi Union -- no settings --
-"hi Question -- no settings --
-"hi EnumerationName -- no settings --
-"hi DefinedName -- no settings --
-"hi LocalVariable -- no settings --
-"hi CTagsClass -- no settings --
-"hi clear -- no settings --
 hi IncSearch guifg=#ffffff guibg=#ff8700 guisp=#ff8700 gui=NONE ctermfg=15 ctermbg=208 cterm=NONE
 hi WildMenu guifg=NONE guibg=#A1A6A8 guisp=#A1A6A8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
 hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
@@ -36,7 +23,7 @@ hi PreCondit guifg=#ffcc00 guibg=NONE guisp=NONE gui=NONE ctermfg=220 ctermbg=NO
 hi Include guifg=#0087ff guibg=NONE guisp=NONE gui=NONE ctermfg=87 ctermbg=NONE cterm=NONE
 hi TabLineSel guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=bold ctermfg=235 ctermbg=1 cterm=bold
 hi StatusLineNC guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=bold ctermfg=235 ctermbg=66 cterm=bold
-hi NonText guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
+hi NonText guifg=#5E6C70 guibg=NONE guisp=NONE gui=NONE ctermfg=235 ctermbg=NONE cterm=NONE
 hi DiffText guifg=NONE guibg=#590006 guisp=#590006 gui=NONE ctermfg=NONE ctermbg=52 cterm=NONE
 hi ErrorMsg guifg=#A1A6A8 guibg=#912C00 guisp=#912C00 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 hi Debug guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE

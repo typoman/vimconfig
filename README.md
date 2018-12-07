@@ -98,6 +98,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
 `D` cut characters from cursor until end of the line\
+`cc` delete the character untile end of the line and go to insert mode\
+`C` delete characters from cursor until end of the line and go ot insert mode\
 `x` delete the character under the cursor\
 `s` delete the character under the cursor and go to insert mode\
 `o` create a new line after current line and go to insert mode\
@@ -143,4 +145,5 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
 `<space>a` select all the matching patterns under cursor/selection\
 `<space>gu` undo the git gutter hunk to the last commit\
-
+`]g` go to previous git gutter hunk
+`[g` go to next git gutter hunk

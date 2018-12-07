@@ -52,7 +52,7 @@ set mousehide
 set belloff=all
 set clipboard=unnamed
 set ts=4
-set autoindent 
+set autoindent
 set expandtab
 set shiftwidth=4
 set cursorline
@@ -60,7 +60,7 @@ set showmatch
 set termbidi
 set encoding=utf-8
 set guifont=BlexMono_Nerd_Font_Mono:h14
-set ignorecase 
+set ignorecase
 set smartcase
 set wildmenu
 set foldmethod=indent
@@ -97,7 +97,8 @@ nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>
 nnoremap <leader>s :w<CR>
-" nnoremap [q :cprevious<CR>
+nnoremap ]g :GitGutterNextHunk<CR>
+nnoremap [g :GitGutterPrevHunk<CR>
 " nnoremap ]q :cnext<CR>
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
@@ -139,7 +140,8 @@ let g:startify_change_to_dir = 1
 let g:startify_session_persistence = 1
 set scrolloff=5
 let g:pymode_rope = 1
-set listchars=eol:↵,tab:⇥\
+set listchars=eol:↵,trail:·,nbsp:·,tab:⇥\
+set list
 let g:VM_no_meta_mappings = 1
 let g:VM_maps = {}
 let g:VM_maps["Select All"]        = '<leader>a'
@@ -148,6 +150,7 @@ let g:VM_maps["Align"]             = '<leader>A'
 let g:VM_maps["Add Cursor Down"]   = '<C-j>'
 let g:VM_maps["Add Cursor Up"]     = '<C-k>'
 let g:VM_mouse_mappings             = 1
+" let g:textobj_syntax_no_default_key_mappings = 1
 " automatically source last used session when no files were given to Vim
 " autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
 autocmd VimEnter * :SL defaultSession
