@@ -88,6 +88,7 @@ map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :History<CR>
+nnoremap <leader>f :FZF<CR>
 nnoremap <leader>? :Maps<CR>
 nnoremap <leader>/ :BLines<CR>
 nnoremap <Leader>b :Buffers<CR>
@@ -96,6 +97,8 @@ nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>
 nnoremap <leader>s :w<CR>
+" nnoremap [q :cprevious<CR>
+" nnoremap ]q :cnext<CR>
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap <Leader>gr :silent execute '!cd ~/.vim;git add *;git commit -am "New changes to the configurations";git push origin master'\|:redraw!<CR>
 nnoremap <Leader>rf :w\|:silent execute '!open -a Robofont;robofont -p "%:p"'\|:redraw!<CR>
@@ -116,6 +119,9 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
 set tabstop=4
+set hidden
+set directory^=~/.vimTmp
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 " Quicker window movement
 " nnoremap <C-j> <C-w>j
 " nnoremap <C-k> <C-w>k

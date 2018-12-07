@@ -57,12 +57,14 @@ After running the above commands, updating the repo can be achieved using `<spac
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this guarantees more efficient keystrokes and less hand movements while editing text.
 
-## Main shortcuts:
+## Main Shortcuts\Commands:
 `Esc` go to normal mode\
 `i` go to insert mode\
 `a` go to insert mode and put cursor after the character\
 `v` go to visual mode (select characters)\
 `V` go to visual line mode (select lines)
+`:map <shorcut combination>` check if a shortcut exist\
+`<space>?` fuzzy find shortcuts`
 
 ## Normal/Visual Mode shortcuts:
 
@@ -139,7 +141,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `>` increase indentation\
 `<` decrease indentation\
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
-`<space>a` select all the matching patterns under cursor/selection
+`<space>a` select all the matching patterns under cursor/selection\
+`<space>gu` undo the git gutter hunk to the last commit\
 
-# Commands:
-`Maps` fuzzy find assigned keyboard shortcuts
