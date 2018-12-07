@@ -1,5 +1,7 @@
-. How to switch beween the windows and go exactly to the same cursor pos
+. How to switch between the windows and go exactly to the same cursor pos
 . More fzf mappings like ag or rg
-. yank tools https://github.com/mg979/vim-yanktools/blob/master/doc/yanktools.txt
-. pymode rope very slow!
-. more VM keymappings: https://github.com/mg979/vim-visual-multi/wiki/M.-Mappings
+. Yank tools https://github.com/mg979/vim-yanktools/blob/master/doc/yanktools.txt
+. Pymode rope very slow!
+. More VM key mappings: https://github.com/mg979/vim-visual-multi/wiki/M.-Mappings
+. Change between dark and light mode plugin: https://github.com/mg979/vim-colortweaks
+. More python mode investigation

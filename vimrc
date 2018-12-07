@@ -57,7 +57,7 @@ set expandtab
 set shiftwidth=4
 set cursorline
 set showmatch
-set termbidi
+ et termbidi
 set encoding=utf-8
 set guifont=BlexMono_Nerd_Font_Mono:h14
 set ignorecase
@@ -139,7 +139,6 @@ let g:startify_session_dir = '~/.vim/session'
 let g:startify_change_to_dir = 1
 let g:startify_session_persistence = 1
 set scrolloff=5
-let g:pymode_rope = 1
 set listchars=eol:↵,trail:·,nbsp:·,tab:⇥\
 set list
 let g:VM_no_meta_mappings = 1
