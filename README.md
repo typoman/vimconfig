@@ -133,7 +133,8 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>t` Open the NerdTree plugin\
 `:e fileName` edit filename. You can use <tab> for auto completion\
 `ZZ` save and close\
-`tab` switch between opened files (buffers)\
+`tab` go to next tab of opened files (buffers)\
+`<shift>tab` go to previous tab of opened files (buffers)\
 `:SS` save the current session\
 `:SL` load a saved session\
 
