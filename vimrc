@@ -8,9 +8,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
-" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'haya14busa/incsearch.vim'
@@ -90,9 +88,10 @@ map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>re :History<CR>
+nnoremap <leader>? :Maps<CR>
 nnoremap <leader>/ :BLines<CR>
 nnoremap <Leader>b :Buffers<CR>
-" nnoremap : :Commands<CR>
+nnoremap <Leader>gu :GitGutterUndoHunk<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
 nnoremap <leader>cc :bd!<CR>
@@ -133,6 +132,7 @@ let g:startify_session_dir = '~/.vim/session'
 let g:startify_change_to_dir = 1
 let g:startify_session_persistence = 1
 set scrolloff=5
+let g:pymode_rope = 1
 set listchars=eol:↵,tab:⇥\
 let g:VM_no_meta_mappings = 1
 let g:VM_maps = {}

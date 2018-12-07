@@ -140,3 +140,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<` decrease indentation\
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
 `<space>a` select all the matching patterns under cursor/selection
+
+# Commands:
+`Maps` fuzzy find assigned keyboard shortcuts
