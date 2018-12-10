@@ -1,6 +1,6 @@
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # What is Vim:
-https://github.com/mhinz/vim-galore#map-capslock-to-control
+https://github.com/mhinz/vim-galore
 
 # Building vim from the source on OS X (High Sierra):
 1. Check if `make` is installed in terminal, If make is not installed, A window pops up instructing you to install the developer tools:
