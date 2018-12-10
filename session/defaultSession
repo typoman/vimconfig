@@ -4,19 +4,17 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/.vim
+cd ~/Dropbox/Robofont\ Scripts/Proofing/Creating\ text\ for\ proofing
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +60 vimrc
-badd +1 colors/bahman.vim
-badd +839 ~/test.py
-badd +137 README.md
-badd +6 todo
+badd +1 ~/.vim/vimrc
+badd +1 MakeProofingText.py
+badd +44 ~/Downloads/bahman.vim
 argglobal
 silent! argdel *
-edit vimrc
+edit ~/.vim/vimrc
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -34,18 +32,18 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 72 - ((18 * winheight(0) + 18) / 37)
+let s:l = 83 - ((28 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-72
-normal! 014|
+83
+normal! 031|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToOIc
+set winheight=1 winwidth=20 shortmess=aoOc
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)

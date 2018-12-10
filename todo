@@ -5,3 +5,4 @@
 . More VM key mappings: https://github.com/mg979/vim-visual-multi/wiki/M.-Mappings
 . Change between dark and light mode plugin: https://github.com/mg979/vim-colortweaks
 . More python mode investigation
+. More text objects: http://codyveal.com/posts/vim-killer-features-part-1-text-objects/

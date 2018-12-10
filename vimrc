@@ -34,7 +34,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
-Plug 'mg979/vim-visual-multi'
+Plug 'mg979/vim-visual-multi', { 'branch': 'test'}
 Plug 'wellle/targets.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -57,9 +57,9 @@ set expandtab
 set shiftwidth=4
 set cursorline
 set showmatch
- et termbidi
+set termbidi
 set encoding=utf-8
-set guifont=BlexMono_Nerd_Font_Mono:h14
+set guifont=BlexMono_Nerd_Font_Mono_Text:h14
 set ignorecase
 set smartcase
 set wildmenu
@@ -80,6 +80,7 @@ let g:pymode_doc_bind = 'K'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:pymode_folding = 0
+let macvim_skip_colorscheme = 1
 let mapleader = " "
 autocmd FileType python set colorcolumn=180
 map /  <Plug>(incsearch-forward)
@@ -108,7 +109,6 @@ nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap cw ciw
 nnoremap ct cit
-let g:multi_cursor_select_all_word_key = '<leader>a'
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FileChangedShellPost *
@@ -134,7 +134,7 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-let g:VM_leader = '\'
+" let g:VM_leader = '\'
 let g:startify_session_dir = '~/.vim/session'
 let g:startify_change_to_dir = 1
 let g:startify_session_persistence = 1
@@ -152,8 +152,8 @@ let g:VM_mouse_mappings             = 1
 " let g:textobj_syntax_no_default_key_mappings = 1
 " automatically source last used session when no files were given to Vim
 " autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
-autocmd VimEnter * :SL defaultSession
 " autocmd BufWritePost * :SS defaultSession
+autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
