@@ -57,6 +57,11 @@ git push origin master
 ```
 After running the above commands, updating the repo can be achieved using `<space>gr` shortcut inside the vim. Of course you need to change the URL if you're copying this repo for yourself.
 
+# Better keyboard layout for Vim
+1. Change Caps lock to <Esc> in `System Preferences> Keyboard> Modifier keys`.
+2. Install Karabiner-Elements and add the following rule in the `Complex Modifications`:
+`Change caps-lock to control if pressed with other keys, to escape if pressed alone`
+
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: 'Normal' which is for editing the text using commands, 'Insert' which is for inserting or typing text and 'Visual' which is for selecting text. If memorized well this guarantees more efficient keystrokes and less hand movements while editing text.
 
