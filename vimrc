@@ -38,6 +38,7 @@ Plug 'mg979/vim-visual-multi', { 'branch': 'test'}
 Plug 'wellle/targets.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'chaoren/vim-wordmotion'
 
 call plug#end()
 
