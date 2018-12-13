@@ -87,7 +87,7 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `j` move cursor down\
 `k` move cursor up\
 `l` move cursor right\
-`H`` start of the line\
+`H` start of the line\
 `J` end of the line\
 `}` go to next paragraph\
 `{` go to previous paragraph\
