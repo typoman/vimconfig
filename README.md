@@ -21,9 +21,9 @@ cd src
 ```
 make; make install
 ```
-6. Install ack:
+6. Install fzf:
 ```
-brew install ack
+brew install fzf
 ```
 
 # Installing using the Homebrew:
