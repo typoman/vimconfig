@@ -96,7 +96,9 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>j :jumps<CR>
 nnoremap H ^
+nnoremap <C-A> ggVG
 nnoremap J $
 nnoremap <leader>re :History<CR>
 nnoremap <leader>f :FZF<CR>

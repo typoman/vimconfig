@@ -62,8 +62,14 @@ After running the above commands, updating the repo can be achieved using `<spac
 2. Install Karabiner-Elements and add the following rule in the `Complex Modifications`:\
 `Change caps-lock to control if pressed with other keys, to escape if pressed alone`
 
+# Make terminal more snappy
+```
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+``` 
+
 # Keyboard shortcuts:
-Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual` which is for selecting text. If memorized well this guarantees more efficient keystrokes and less hand movements while editing text.
+Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual` which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed. 
 
 ## Main Shortcuts\Commands:
 `Esc` go to normal mode\
@@ -81,12 +87,15 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `j` move cursor down\
 `k` move cursor up\
 `l` move cursor right\
-`0` start of the line\
-`%` end of the line\
+`H`` start of the line\
+`J` end of the line\
 `}` go to next paragraph\
 `{` go to previous paragraph\
 `G` go to end of the file\
 `gg` go to first character in the file\
+`g;` go to prvious editing position\
+`g,` go to next editing position\
+`<Ctrl-a>` select all\
 `/` search the file (including regular expressions)\
 `n` go to next match term in search\
 `N` go to previous match\
@@ -101,6 +110,8 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `ma` mark the position of cursor and store it in `a`\
 `'a` go to the mark position `a`\
 `<space>/` fuzzy find the current file (buffer)\
+`<space>j` show list of previous cursor position which can be selected by typing a number (includes prevous position in all the files too)
+`<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions
 
 ### Selecting
 Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
