@@ -39,6 +39,10 @@ Plug 'wellle/targets.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'chaoren/vim-wordmotion'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
+Plug 'terryma/vim-expand-region'
 
 call plug#end()
 

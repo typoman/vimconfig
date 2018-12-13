@@ -102,6 +102,13 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `'a` go to the mark position `a`\
 `<space>/` fuzzy find the current file (buffer)\
 
+### Selecting
+Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
+`+` expand selection region\
+`_` shrink selection region\
+`<Ctrl-n>` select the next word matching the pattern under cursor/selection\
+`vii` select the indentation scope, adding more ii increases the indentation level\
+
 ### Editing Text
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
@@ -121,12 +128,11 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `ci'` change the text inside the quotes\
 `1z=` fix the spelling under the cursor\
 `zg` learn spelling of the word under cursor\
-`da)` cut all the text inside the parantheses, same goes for brackets or braces\
+`da)` cut all the text inside the parentheses, same goes for brackets or braces\
 `ct` change the text enclosed by the tag (e.g: html, xml)\
 `di>` cut the tag info\
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` cut the indentation scope\
-`vii` select the indentation scope, adding more ii increases the indentation level\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
 `u` make the selection lowercase\
 `U` make the selection uppercase\
@@ -151,8 +157,6 @@ Vim is a modal editor. It operates in three different main modes: 'Normal' which
 `<space>rf` run in Robofont\
 `>` increase indentation\
 `<` decrease indentation\
-`<Ctrl-n>` select the next word matching the pattern under cursor/selection\
-`<space>a` select all the matching patterns under cursor/selection\
 `<space>gu` undo the git gutter hunk to the last commit\
 `]g` go to previous git gutter hunk
 `[g` go to next git gutter hunk
