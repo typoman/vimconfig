@@ -44,8 +44,9 @@ call plug#end()
 
 colorscheme bahman
 set background=dark
-
-set relativenumber
+set lazyredraw
+set ttyfast
+" set relativenumber " slows vim down
 " set termguicolors
 set bs=2
 set mouse=a
@@ -54,10 +55,12 @@ set belloff=all
 set clipboard=unnamed
 set ts=4
 set autoindent
+set number
 set expandtab
 set shiftwidth=4
-set cursorline
+" set cursorline " slows vim down
 set showmatch
+set re=1
 set termbidi
 set encoding=utf-8
 set guifont=BlexMono_Nerd_Font_Mono_Text:h14
@@ -89,6 +92,8 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap H ^
+nnoremap J $
 nnoremap <leader>re :History<CR>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>? :Maps<CR>
