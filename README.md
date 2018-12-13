@@ -21,10 +21,6 @@ cd src
 ```
 make; make install
 ```
-6. Install fzf:
-```
-brew install fzf
-```
 
 # Installing using the Homebrew:
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
@@ -44,6 +40,10 @@ cd ~
 mkdir .vim
 cd .vim
 git clone https://github.com/typoman/vimconfig
+```
+Install fzf:
+```
+brew install fzf
 ```
 
 # Backup this configuration to the current repo:
