@@ -116,7 +116,8 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `<Ctrl-a>` select all\
 
 ### Selecting
-Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:\\
+Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:\
+
 `+` expand selection region\
 `_` shrink selection region\
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
