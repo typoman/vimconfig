@@ -63,10 +63,12 @@ After running the above commands, updating the repo can be achieved using `<spac
 `Change caps-lock to control if pressed with other keys, to escape if pressed alone`
 
 # Make terminal more snappy
+Terminal:
 ```
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 ``` 
+Then restart OS X.
 
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual` which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed. 
@@ -114,7 +116,7 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions
 
 ### Selecting
-Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
+Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:\
 `+` expand selection region\
 `_` shrink selection region\
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
