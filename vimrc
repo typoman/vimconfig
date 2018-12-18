@@ -51,6 +51,7 @@ set background=dark
 set lazyredraw
 set ttyfast
 " set relativenumber " slows vim down
+" 
 " set termguicolors
 set bs=2
 set mouse=a
