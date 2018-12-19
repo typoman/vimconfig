@@ -1,3 +1,4 @@
+zO
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # What is Vim:
 https://github.com/mhinz/vim-galore
@@ -84,7 +85,7 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 
 ## Normal/Visual Mode shortcuts:
 
-### Navigation
+## Navigation
 `h` move cursor to the left\
 `j` cursor down\
 `k` cursor up\
@@ -113,7 +114,7 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `<space>/` fuzzy find the current file (buffer)\
 `<space>j` show list of previous cursor position which can be selected by typing a number (includes prevous position in all the files too)
 `<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions\
-`<Ctrl-a>` select all\
+`<Ctrl-a>` select all
 
 ### Selecting
 Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
@@ -121,7 +122,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `+` expand selection region\
 `_` shrink selection region\
 `<Ctrl-n>` select the next word matching the pattern under cursor/selection\
-`vii` select the indentation scope, adding more ii increases the indentation level\
+`vii` select the indentation scope, adding more ii increases the indentation level
 
 ### Editing Text
 `cw` delete the word and go to insert mode\
@@ -149,7 +150,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `dii` cut the indentation scope\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
 `u` make the selection lowercase\
-`U` make the selection uppercase\
+`U` make the selection uppercase
 
 ### Handling files
 `<space>s` save the file\
@@ -164,7 +165,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `tab` go to next tab of opened files (buffers)\
 `<shift>tab` go to previous tab of opened files (buffers)\
 `:SS` save the current session\
-`:SL` load a saved session\
+`:SL` load a saved session
 
 ### Coding
 `<space>r` run in python\
@@ -172,5 +173,9 @@ Generally going to visual mode is the selection mode and if you start navigating
 `>` increase indentation\
 `<` decrease indentation\
 `<space>gu` undo the git gutter hunk to the last commit\
-`]g` go to previous git gutter hunk
-`[g` go to next git gutter hunk
+`]g` go to previous git gutter hunk\
+`[g` go to next git gutter hunk\
+`gd` go to definition of the object under the cursor\
+`zi` toggle folding\
+`zo` open fold\
+`zc` close fold

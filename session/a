@@ -9,11 +9,15 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +8 .vim/todo
-badd +1 .vim/vimrc
+badd +1 .zshrc
+badd +1 .vim/todo
+badd +79 .vim/README.md
+badd +116 .vim/vimrc
+badd +9 test.py
+badd +0 ~/Dropbox/Work/Commercial\ Type/Graphik\ Hebrew/GraphikHebrewBuild/features.fea
 argglobal
 silent! argdel *
-edit .vim/todo
+edit ~/Dropbox/Work/Commercial\ Type/Graphik\ Hebrew/GraphikHebrewBuild/features.fea
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -31,11 +35,11 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 8 - ((7 * winheight(0) + 17) / 34)
+let s:l = 57 - ((5 * winheight(0) + 20) / 41)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
+57
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
