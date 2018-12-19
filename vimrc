@@ -181,4 +181,13 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+function ToggleWrap()
+ if (&wrap == 1)
+   set nowrap
+ else
+   set wrap
+ endif
+endfunction
 
+map <leader>w :call ToggleWrap()<CR>
+map! <leader>w ^[:call ToggleWrap()<CR>
