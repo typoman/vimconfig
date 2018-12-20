@@ -43,6 +43,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'terryma/vim-expand-region'
+Plug 'wincent/terminus'
+Plug 'mbbill/undotree'
 
 call plug#end()
 
@@ -191,3 +193,6 @@ endfunction
 
 map <leader>w :call ToggleWrap()<CR>
 map! <leader>w ^[:call ToggleWrap()<CR>
+nnoremap <leader>h :Helptags<CR>
+set showcmd 
+nnoremap ZZ :set ssop+=localoptions<CR> :SS defaultSession<CR> :qa<CR>
