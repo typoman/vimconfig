@@ -126,6 +126,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `vii` select the indentation scope, adding more ii increases the indentation level
 
 ### Editing Text
+`<Ctrl>h` backspace
 `cw` delete the word and go to insert mode\
 `.` repeat last sequence of commands\
 `D` cut characters from cursor until end of the line\
@@ -151,7 +152,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `dii` cut the indentation scope\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
 `u` make the selection lowercase\
-`U` make the selection uppercase
+`U` make the selection uppercase\
 
 ### Handling files
 `<space>s` save the file\
