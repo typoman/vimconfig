@@ -94,7 +94,7 @@ let g:pymode_folding = 0
 let macvim_skip_colorscheme = 1
 let mapleader = " "
 autocmd FileType python set colorcolumn=180
-map /  <Plug>(incsearch-forward)
+" map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
@@ -196,3 +196,16 @@ map! <leader>w ^[:call ToggleWrap()<CR>
 nnoremap <leader>h :Helptags<CR>
 set showcmd 
 nnoremap ZZ :set ssop+=localoptions<CR> :SS defaultSession<CR> :qa<CR>
+map  f <Plug>(easymotion-bd-f)
+nmap f <Plug>(easymotion-overwin-f)
+function! s:config_easyfuzzymotion(...) abort
+  return extend(copy({
+  \   'converters': [incsearch#config#fuzzyword#converter()],
+  \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
+  \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+  \   'is_expr': 0,
+  \   'is_stay': 1
+  \ }), get(a:, 1, {}))
+endfunction
+
+noremap <silent><expr> / incsearch#go(<SID>config_easyfuzzymotion())
