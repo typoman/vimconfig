@@ -74,6 +74,9 @@ Then restart OS X.
 # Keyboard shortcuts:
 Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual` which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed. 
 
+## Guide and Help
+`<space>h` Fuzzy search help tags\
+
 ## Main Shortcuts\Commands:
 `Esc` go to normal mode\
 `i` insert mode\
