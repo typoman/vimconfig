@@ -154,8 +154,6 @@ Generally going to visual mode is the selection mode and if you start navigating
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` cut the indentation scope\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
-`u` make the selection lowercase\
-`U` make the selection uppercase\
 
 ### Handling files
 `<space>s` save the file\
@@ -166,6 +164,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `<space>n` new untitled file\
 `<space>t` Open the NerdTree plugin\
 `:e fileName` edit filename. You can use <tab> for auto completion\
+`:w fileName` write (save) the current file as the filename\
 `ZZ` save and close\
 `tab` go to next tab of opened files (buffers)\
 `<shift>tab` go to previous tab of opened files (buffers)\

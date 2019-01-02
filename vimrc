@@ -50,6 +50,7 @@ call plug#end()
 
 colorscheme bahman
 set background=dark
+set autochdir
 set lazyredraw
 set ttyfast
 " set relativenumber " slows vim down
@@ -99,6 +100,7 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <M-a> :echo "aaaasdasd"<CR>
 nnoremap <leader>j :jumps<CR>
 nnoremap H ^
 nnoremap <C-A> ggVG
@@ -124,6 +126,12 @@ nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap cw ciw
 nnoremap ct cit
+nnoremap <CRA-j> :m .+1<CR>==
+nnoremap <C-K> :m .-2<CR>==
+inoremap <C-J> <Esc>:m .+1<CR>==gi
+inoremap <C-K> <Esc>:m .-2<CR>==gi
+vnoremap <C-J> :m '>+1<CR>gv=gv
+vnoremap <C-K> :m '<-2<CR>gv=gv
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FileChangedShellPost *
