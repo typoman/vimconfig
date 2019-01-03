@@ -1,4 +1,3 @@
-zO
 This is notes for using the vim with the configurations inside this repo. Also this includes notes about how to use vim with this configurations.
 # What is Vim:
 https://github.com/mhinz/vim-galore
@@ -119,6 +118,14 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `<space>w` toggle wrap lines
 `<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions\
 `<Ctrl-a>` select all
+`[-` Move to *previous* line of *lesser* indent than the current line.
+`[+` Move to *previous* line of *greater* indent than the current line.
+`[=` Move to *previous* line of *same* indent as the current line that
+     is separated from the current line by lines of different indents.
+`]-` Move to *next* line of *lesser* indent than the current line.
+`]+` Move to *next* line of *greater* indent than the current line.
+`]=` Move to *next* line of *same* indent as the current line that
+     is separated from the current line by lines of different indents.
 
 ### Selecting
 Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
@@ -154,6 +161,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 `cii` change the indentation scope (delete the indentation scope and go to insert mode)\
 `dii` cut the indentation scope\
 `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
+`<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't work in multiple cursor mode)\
 
 ### Handling files
 `<space>s` save the file\

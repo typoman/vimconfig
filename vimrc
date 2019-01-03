@@ -45,6 +45,7 @@ Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'wincent/terminus'
 Plug 'mbbill/undotree'
+Plug 'jeetsukumaran/vim-indentwise'
 
 call plug#end()
 
@@ -63,6 +64,7 @@ set belloff=all
 set clipboard=unnamed
 set ts=4
 set autoindent
+set smartindent
 set number
 set expandtab
 set shiftwidth=4
@@ -79,6 +81,7 @@ set foldmethod=indent
 set undofile
 set undodir=~/.vimUndoHistory
 let g:pymode = 1
+let g:pymode_rope_completion = 0
 let g:pymode_python = 'python3'
 let python_highlight_all=1
 let g:pymode_rope = 0
@@ -127,11 +130,6 @@ nnoremap <Leader>vr :source ~/.vim/vimrc<CR>
 nnoremap cw ciw
 nnoremap ct cit
 nnoremap <CRA-j> :m .+1<CR>==
-nnoremap <C-K> :m .-2<CR>==
-inoremap <C-J> <Esc>:m .+1<CR>==gi
-inoremap <C-K> <Esc>:m .-2<CR>==gi
-vnoremap <C-J> :m '>+1<CR>gv=gv
-vnoremap <C-K> :m '<-2<CR>gv=gv
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 autocmd FileChangedShellPost *
@@ -199,8 +197,8 @@ function ToggleWrap()
  endif
 endfunction
 
-map <leader>w :call ToggleWrap()<CR>
-map! <leader>w ^[:call ToggleWrap()<CR>
+nnoremap <leader>w :call ToggleWrap()<CR>
+" nnoro! <leader>w ^[:call ToggleWrap()<CR>
 nnoremap <leader>h :Helptags<CR>
 set showcmd 
 nnoremap ZZ :set ssop+=localoptions<CR> :SS defaultSession<CR> :qa<CR>
