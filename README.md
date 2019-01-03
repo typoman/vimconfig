@@ -77,13 +77,13 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 `<space>h` Fuzzy search help tags\
 
 ## Main Shortcuts\Commands:
-`Esc` go to normal mode\
-`i` insert mode\
-`a` insert mode and put cursor after the character\
-`v` visual mode (select characters)\
-`V` visual line mode (select lines)
-`:map <shorcut combination>` check if a shortcut exist\
-`<space>?` fuzzy find shortcuts`
+- `Esc` go to normal mode
+- `i` insert mode
+- `a` insert mode and put cursor after the character
+- `v` visual mode (select characters)
+- `V` visual line mode (select lines)
+- `:map <shorcut combination>` check if a shortcut exist
+-  <space>?` fuzzy find shortcuts`
 
 ## Normal/Visual Mode shortcuts:
 
