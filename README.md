@@ -136,7 +136,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 
 #### Mutiple cursor mode
 - `<Ctrl-n>` select the next word matching the pattern under cursor/selection 
-- `<Ctrl-j>' or '<Ctrl-k>' add one cursor up or down
+- `<Ctrl-j>` or `<Ctrl-k>` add one cursor up or down
 - `{` or `}` go to previous cursor or next one
 - `[` or `]` add next match or previous match
 - `q` remove next match
