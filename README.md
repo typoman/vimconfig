@@ -140,6 +140,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `{` or `}` go to previous cursor or next one
 - `[` or `]` add next match or previous match
 - `q` remove next match
+- `\a` select all the matches of the selection/word under cursor
 
 ### Editing Text
 - `<Ctrl>h` backspace
