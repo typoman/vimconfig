@@ -83,56 +83,56 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 - `v` visual mode (select characters)
 - `V` visual line mode (select lines)
 - `:map <shorcut combination>` check if a shortcut exist
--  <space>?` fuzzy find shortcuts`
+- `<space>?` fuzzy find shortcuts`
 
 ## Normal/Visual Mode shortcuts:
 
 ## Navigation
-`h` move cursor to the left\
-`j` cursor down\
-`k` cursor up\
-`l` cursor right\
-`H` start of the line\
-`J` end of the line\
-`}` next paragraph\
-`{` previous paragraph\
-`G` end of the file\
-`gg` first character in the file\
-`g;` prvious editing position\
-`g,` next editing position\
-`/` easy motion fuzzy search the file, after hitting enter type the highlighted character on the view to jump to that position (including regular expressions)\
-`n` next match term in search\
-`N` previous match\
-`w` start of the next word\
-`e` end of the next word\
-`b` previous word\
-`[s` previous bad spelling\
-`''` previous cursor position, or you can use ``` `` ``` \
-`fa` find the next character 'a' on the current line using easy motion, then type the highlighted character to jump, use ';' to move to next one\
-`ta` find the previous character 'a' on the current line\
-`42gg` line 42\
-`ma` mark the position of cursor and store it in `a`\
-`'a` jump to the mark position `a`\
-`<space>/` fuzzy find the current file (buffer)\
-`<space>j` show list of previous cursor position which can be selected by typing a number (includes prevous position in all the files too)
-`<space>w` toggle wrap lines
-`<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions\
-`<Ctrl-a>` select all
-`[-` Move to *previous* line of *lesser* indent than the current line.
-`[+` Move to *previous* line of *greater* indent than the current line.
-`[=` Move to *previous* line of *same* indent as the current line that
-     is separated from the current line by lines of different indents.
-`]-` Move to *next* line of *lesser* indent than the current line.
-`]+` Move to *next* line of *greater* indent than the current line.
-`]=` Move to *next* line of *same* indent as the current line that
-     is separated from the current line by lines of different indents.
+- `h` move cursor to the left
+- `j` cursor down
+- `k` cursor up
+- `l` cursor right
+- `H` start of the line
+- `J` end of the line
+- `}` next paragraph
+- `{` previous paragraph
+- `G` end of the file
+- `gg` first character in the file
+- `g;` prvious editing position
+- `g,` next editing position
+- `/` easy motion fuzzy search the file, after hitting enter type the highlighted character on the view to jump to that position (including regular expressions)
+- `n` next match term in search
+- `N` previous match
+- `w` start of the next word
+- `e` end of the next word
+- `b` previous word
+- `[s` previous bad spelling
+- `''` previous cursor position, or you can use ``` `` ``` 
+- `fa` find the next character 'a' on the current line using easy motion, then type the highlighted character to jump, use ';' to move to next one
+- `ta` find the previous character 'a' on the current line
+- `42gg` line 42
+- `ma` mark the position of cursor and store it in `a`
+- `'a` jump to the mark position `a`
+- `<space>/` fuzzy find the current file (buffer)
+- `<space>j` show list of previous cursor position which can be selected by typing a number (includes prevous position in all the files too)
+- `<space>w` toggle wrap lines
+- `<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions
+- `<Ctrl-a>` select all
+- `[-` Move to *previous* line of *lesser* indent than the current line.
+- `[+` Move to *previous* line of *greater* indent than the current line.
+- `[=` Move to *previous* line of *same* indent as the current line that
+       is separated from the current line by lines of different indents.
+- `]-` Move to *next* line of *lesser* indent than the current line.
+- `]+` Move to *next* line of *greater* indent than the current line.
+- `]=` Move to *next* line of *same* indent as the current line that
+       is separated from the current line by lines of different indents.
 
 ### Selecting
 Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
 
-`+` expand selection region\
-`_` shrink selection region\
-`<Ctrl-n>` select the next word matching the pattern under cursor/selection\
+`+` expand selection region
+`_` shrink selection region
+`<Ctrl-n>` select the next word matching the pattern under cursor/selection
 `vii` select the indentation scope, adding more ii increases the indentation level
 
 ### Editing Text
