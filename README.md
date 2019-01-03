@@ -132,8 +132,14 @@ Generally going to visual mode is the selection mode and if you start navigating
 
 - `+` expand selection region
 - `_` shrink selection region
-- `<Ctrl-n>` select the next word matching the pattern under cursor/selection, use `<Ctrl-N` to skip
 - `vii` select the indentation scope, adding more ii increases the indentation level
+
+#### Mutiple cursor mode
+- `<Ctrl-n>` select the next word matching the pattern under cursor/selection 
+- `<Ctrl-j>' or '<Ctrl-k>' add one cursor up or down
+- `{` or `}` go to previous cursor or next one
+- `[` or `]` add next match or previous match
+- `q` remove next match
 
 ### Editing Text
 - `<Ctrl>h` backspace
