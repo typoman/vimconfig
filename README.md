@@ -67,14 +67,14 @@ Terminal:
 ```
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
-``` 
+```
 Then restart OS X.
 
 # Keyboard shortcuts:
-Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual` which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed. 
+Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual`which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed.
 
 ## Guide and Help
-`<space>h` Fuzzy search help tags\
+- `<space>h` Fuzzy search help tags\
 
 ## Main Shortcuts\Commands:
 - `Esc` go to normal mode
@@ -130,64 +130,64 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 ### Selecting
 Generally going to visual mode is the selection mode and if you start navigating, the selection is from the position of the cursor before the visual mode until the current position. Although there are more shortcuts:
 
-`+` expand selection region
-`_` shrink selection region
-`<Ctrl-n>` select the next word matching the pattern under cursor/selection
-`vii` select the indentation scope, adding more ii increases the indentation level
+- `+` expand selection region
+- `_` shrink selection region
+- `<Ctrl-n>` select the next word matching the pattern under cursor/selection, use `<Ctrl-N` to skip
+- `vii` select the indentation scope, adding more ii increases the indentation level
 
 ### Editing Text
-`<Ctrl>h` backspace
-`cw` delete the word and go to insert mode\
-`.` repeat last sequence of commands\
-`D` cut characters from cursor until end of the line\
-`cc` delete the character untile end of the line and go to insert mode\
-`C` delete characters from cursor until end of the line and go ot insert mode\
-`x` delete the character under the cursor\
-`s` delete the character under the cursor and go to insert mode\
-`o` create a new line after current line and go to insert mode\
-`Vx` delete the line\
-`dd` cut the current line\
-`<space>a` match all the words under cursor\
-`y` yank selection (copy)\
-`yy` yank the line\
-`ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything\
-`ds'` cut the character ' surrounding the word under the cursor\
-`ci'` change the text inside the quotes\
-`1z=` fix the spelling under the cursor\
-`zg` learn spelling of the word under cursor\
-`da)` cut all the text inside the parentheses, same goes for brackets or braces\
-`ct` change the text enclosed by the tag (e.g: html, xml)\
-`di>` cut the tag info\
-`cii` change the indentation scope (delete the indentation scope and go to insert mode)\
-`dii` cut the indentation scope\
-`~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)\
-`<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't work in multiple cursor mode)\
+- `<Ctrl>h` backspace
+- `cw` delete the word and go to insert mode
+- `.` repeat last sequence of commands
+- `D` cut characters from cursor until end of the line
+- `cc` delete the character untile end of the line and go to insert mode
+- `C` delete characters from cursor until end of the line and go ot insert mode
+- `x` delete the character under the cursor
+- `s` delete the character under the cursor and go to insert mode
+- `o` create a new line after current line and go to insert mode
+- `Vx` delete the line
+- `dd` cut the current line
+- `<space>a` match all the words under cursor
+- `y` yank selection (copy)
+- `yy` yank the line
+- `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything
+- `ds'` cut the character ' surrounding the word under the cursor
+- `ci'` change the text inside the quotes
+- `1z=` fix the spelling under the cursor
+- `zg` learn spelling of the word under cursor
+- `da)` cut all the text inside the parentheses, same goes for brackets or braces
+- `ct` change the text enclosed by the tag (e.g: html, xml)
+- `di>` cut the tag info
+- `cii` change the indentation scope (delete the indentation scope and go to insert mode)
+- `dii` cut the indentation scope
+- `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)
+- `<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't work in multiple cursor mode)
 
 ### Handling files
-`<space>s` save the file\
-`<space>cc` close the file without saving\
-`<space>c` close the file\window\
-`<space>re` show most recent opened files\
-`<space>b` explore buffers in fuzzy mode\
-`<space>n` new untitled file\
-`<space>t` Open the NerdTree plugin\
-`:e fileName` edit filename. You can use <tab> for auto completion\
-`:w fileName` write (save) the current file as the filename\
-`ZZ` save and close\
-`tab` go to next tab of opened files (buffers)\
-`<shift>tab` go to previous tab of opened files (buffers)\
-`:SS` save the current session\
-`:SL` load a saved session
+- `<space>s` save the file
+- `<space>cc` close the file without saving
+- `<space>c` close the file\window
+- `<space>re` show most recent opened files
+- `<space>b` explore buffers in fuzzy mode
+- `<space>n` new untitled file
+- `<space>t` Open the NerdTree plugin
+- `:e fileName` edit filename. You can use <tab> for auto completion
+- `:w fileName` write (save) the current file as the filename
+- `ZZ` save and close
+- `tab` go to next tab of opened files (buffers)
+- `<shift>tab` go to previous tab of opened files (buffers)
+- `:SS` save the current session
+- `:SL` load a saved session
 
 ### Coding
-`<space>r` run in python\
-`<space>rf` run in Robofont\
-`>` increase indentation\
-`<` decrease indentation\
-`<space>gu` undo the git gutter hunk to the last commit\
-`]g` go to previous git gutter hunk\
-`[g` go to next git gutter hunk\
-`gd` go to definition of the object under the cursor\
-`zi` toggle folding\
-`zo` open fold\
-`zc` close fold
+- `<space>r` run in python
+- `<space>rf` run in Robofont
+- `>` increase indentation
+- `<` decrease indentation
+- `<space>gu` undo the git gutter hunk to the last commit
+- `]g` go to previous git gutter hunk
+- `[g` go to next git gutter hunk
+- `gd` go to definition of the object under the cursor
+- `zi` toggle folding
+- `zo` open fold
+- `zc` close fold
