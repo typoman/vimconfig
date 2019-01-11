@@ -9,9 +9,9 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +428 ~/bitbucket/featureMan/Lib/featureMan/otSyntax.py
-badd +83 ~/.vim/vimrc
-badd +157 ~/.vim/README.md
+badd +1 ~/bitbucket/featureMan/Lib/featureMan/otSyntax.py
+badd +1 ~/.vim/vimrc
+badd +186 ~/.vim/README.md
 argglobal
 silent! argdel *
 edit ~/bitbucket/featureMan/Lib/featureMan/otSyntax.py
@@ -45,7 +45,6 @@ onoremap <buffer> [M :call pymode#motion#move('^\s*def\s', 'b')
 onoremap <buffer> [[ :call pymode#motion#move('\v^(class|def)\s', 'b')
 nnoremap <buffer> [M :call pymode#motion#move('^\s*def\s', 'b')
 nnoremap <buffer> [[ :call pymode#motion#move('\v^(class|def)\s', 'b')
-nmap <buffer> <nowait> <silent> \A <Plug>(VM-Align)
 nmap <buffer> ]c <Plug>GitGutterNextHunk
 onoremap <buffer> ]C :call pymode#motion#move('\v^(class|def)\s', '')
 nnoremap <buffer> ]C :call pymode#motion#move('\v^(class|def)\s', '')
@@ -182,11 +181,11 @@ setlocal nowinfixheight
 setlocal winfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 430 - ((22 * winheight(0) + 20) / 41)
+let s:l = 439 - ((35 * winheight(0) + 20) / 41)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-430
+439
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0

@@ -141,6 +141,8 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `[` or `]` add next match or previous match
 - `q` remove next match
 - `\a` select all the matches of the selection/word under cursor
+- `<tab>` switch between multi visual/normal mode
+- `<Esc>` exit multiple cursors
 
 ### Editing Text
 - `<Ctrl>h` backspace
@@ -165,6 +167,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `da)` cut all the text inside the parentheses, same goes for brackets or braces
 - `ct` change the text enclosed by the tag (e.g: html, xml)
 - `di>` cut the tag info
+- `di}` cut everything inside the curly braves
 - `cii` change the indentation scope (delete the indentation scope and go to insert mode)
 - `dii` cut the indentation scope
 - `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)
