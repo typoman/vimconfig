@@ -175,6 +175,8 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't work in multiple cursor mode)
 
 ### Handling files
+Use `vimdiff f1 f2` in bash to see the difference between file `f1` and `f2`.
+ 
 - `<space>s` save the file
 - `<space>cc` close the file without saving
 - `<space>c` close the file\window
@@ -189,6 +191,12 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `<shift>tab` go to previous tab of opened files (buffers)
 - `:SS` save the current session
 - `:SL` load a saved session
+
+### Windows
+First hit `<Ctrl-w>` and then any of these keys for the following action:
+- `h` or `j` or `k` or `l` for switching to another window
+- `v` split the current tab vertically
+- `<shift>j` swap the direction of split to horizontal direction
 
 ### Coding
 - `<space>r` run in python
