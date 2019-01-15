@@ -133,6 +133,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `+` expand selection region
 - `_` shrink selection region
 - `vii` select the indentation scope, adding more ii increases the indentation level
+- `o` Go to Other end of highlighted text
 
 #### Mutiple cursor mode
 - `<Ctrl-n>` select the next word matching the pattern under cursor/selection 
