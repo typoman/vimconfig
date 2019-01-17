@@ -74,7 +74,8 @@ Then restart OS X.
 Vim is a modal editor. It operates in three different main modes: `Normal` which is for editing the text using commands, `Insert` which is for inserting or typing text and `Visual`which is for selecting text. If shortcuts are memorized well this guarantees more efficient keystrokes and less hand movements while editing text. I have changed default Vim shortcuts to suit my configuration which is also dependent on the plugins I've installed.
 
 ## Guide and Help
-- `<space>h` Fuzzy search help tags\
+- `<space>h` Fuzzy search help tags
+- `<ctrl>]` jump to the topic surrounded by `|`
 
 ## Main Shortcuts\Commands:
 - `Esc` go to normal mode
@@ -135,7 +136,7 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `vii` select the indentation scope, adding more ii increases the indentation level
 - `o` Go to Other end of highlighted text
 
-#### Mutiple cursor mode
+#### Multiple cursor mode
 - `<Ctrl-n>` select the next word matching the pattern under cursor/selection 
 - `<Ctrl-j>` or `<Ctrl-k>` add one cursor up or down
 - `{` or `}` go to previous cursor or next one
@@ -150,8 +151,8 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `cw` delete the word and go to insert mode
 - `.` repeat last sequence of commands
 - `D` cut characters from cursor until end of the line
-- `cc` delete the character untile end of the line and go to insert mode
-- `C` delete characters from cursor until end of the line and go ot insert mode
+- `cc` delete the character until end of the line and go to insert mode
+- `C` delete characters from cursor until end of the line and go to insert mode
 - `x` delete the character under the cursor
 - `s` delete the character under the cursor and go to insert mode
 - `o` create a new line after current line and go to insert mode
@@ -165,10 +166,11 @@ Generally going to visual mode is the selection mode and if you start navigating
 - `ci'` change the text inside the quotes
 - `1z=` fix the spelling under the cursor
 - `zg` learn spelling of the word under cursor
-- `da)` cut all the text inside the parentheses, same goes for brackets or braces
+- `da)` cut all the text inside and including the parentheses, same goes for brackets or braces
+- `ysiw<tag>` yank surrounding inner word with <tag> (add <tag> to the word boundaries)
 - `ct` change the text enclosed by the tag (e.g: html, xml)
 - `di>` cut the tag info
-- `di}` cut everything inside the curly braves
+- `di}` cut everything inside the curly braces
 - `cii` change the indentation scope (delete the indentation scope and go to insert mode)
 - `dii` cut the indentation scope
 - `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)
