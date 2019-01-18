@@ -89,6 +89,8 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 ## Normal/Visual Mode shortcuts:
 
 ## Navigation
+Most of the keys are meant for Normal mode but most likely they work for Visual mode too.
+
 - `h` move cursor to the left
 - `j` cursor down
 - `k` cursor up
@@ -107,6 +109,7 @@ Vim is a modal editor. It operates in three different main modes: `Normal` which
 - `w` start of the next word
 - `e` end of the next word
 - `b` previous word
+- `%` go to the other mathes of the following pair [],{},()
 - `[s` previous bad spelling
 - `''` previous cursor position, or you can use ``` `` ``` 
 - `fa` find the next character 'a' on the current line using easy motion, then type the highlighted character to jump, use ';' to move to next one
