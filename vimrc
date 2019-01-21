@@ -79,6 +79,7 @@ set smartcase
 set wildmenu
 set foldmethod=indent
 set undofile
+set noswapfile
 set undodir=~/.vimUndoHistory
 let g:pymode = 1
 let g:pymode_rope_completion = 0
@@ -103,6 +104,7 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <buffer> <leader>r :exec '!python3' shellescape(@%, 1)<cr>
 nnoremap <M-a> :echo "aaaasdasd"<CR>
 nnoremap <leader>j :jumps<CR>
 nnoremap H ^
