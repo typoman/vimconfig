@@ -105,6 +105,7 @@ Most of the keys are meant for Normal mode but most likely they work for Visual 
 - `g,` next editing position
 - `/` easy motion fuzzy search the file, after hitting enter type the highlighted character on the view to jump to that position (including regular expressions)
 - ``*`` go to next occurence of the word under cursor `#` for previous
+- `<space>ag` fuzzy find the word under cursor in the current project files (uses Ag aka the sliver searcher)
 - `n` next match term in search
 - `N` previous match
 - `w` start of the next word
