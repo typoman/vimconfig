@@ -204,6 +204,7 @@ nnoremap <leader>w :call ToggleWrap()<CR>
 nnoremap <leader>h :Helptags<CR>
 set showcmd 
 nnoremap ZZ :set ssop+=localoptions<CR> :SS defaultSession<CR> :qa<CR>
+nnoremap <leader>ag :Ag <c-r>=expand("<cword>")<cr><cr>
 map  f <Plug>(easymotion-bd-f)
 nmap f <Plug>(easymotion-overwin-f)
 function! s:config_easyfuzzymotion(...) abort
