@@ -54,6 +54,7 @@ set background=dark
 set autochdir
 set lazyredraw
 set ttyfast
+set textwidth=80
 " set relativenumber " slows vim down
 " 
 " set termguicolors
