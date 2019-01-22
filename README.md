@@ -97,7 +97,8 @@ which is also dependent on the plugins I've installed.
 ## Normal/Visual Mode shortcuts:
 
 ## Navigation
-Most of the keys are meant for Normal mode but most likely they work for Visual mode too.
+Most of the keys are meant for Normal mode but most likely they work for Visual
+mode too.
 
 - `h` move cursor to the left
 - `j` cursor down
@@ -111,9 +112,12 @@ Most of the keys are meant for Normal mode but most likely they work for Visual 
 - `gg` first character in the file
 - `g;` prvious editing position
 - `g,` next editing position
-- `/` easy motion fuzzy search the file, after hitting enter type the highlighted character on the view to jump to that position (including regular expressions)
+- `/` easy motion fuzzy search the file, after hitting enter type the
+  highlighted character on the view to jump to that position (including regular
+  expressions)
 - ``*`` go to next occurence of the word under cursor `#` for previous
-- `<space>ag` fuzzy find the word under cursor in the current project files (uses Ag aka the sliver searcher)
+- `<space>ag` fuzzy find the word under cursor in the current project files
+  (uses Ag aka the sliver searcher)
 - `n` next match term in search
 - `N` previous match
 - `w` start of the next word
@@ -122,24 +126,26 @@ Most of the keys are meant for Normal mode but most likely they work for Visual 
 - `%` go to the other mathes of the following pair [],{},()
 - `[s` previous bad spelling
 - `''` previous cursor position, or you can use ``` `` ``` 
-- `fa` find the next character 'a' on the current line using easy motion, then type the highlighted character to jump, use ';' to move to next one
+- `fa` find the next character 'a' on the current line using easy motion, then
+  type the highlighted character to jump, use ';' to move to next one
 - `ta` find the previous character 'a' on the current line
 - `42gg` line 42
 - `ma` mark the position of cursor and store it in `a`
 - `'a` jump to the mark position `a`
 - `<space>/` fuzzy find the current file (buffer)
-- `<space>j` show list of previous cursor position which can be selected by typing a number (includes prevous position in all the files too)
+- `<space>j` show list of previous cursor position which can be selected by
+  typing a number (includes prevous position in all the files too)
 - `<space>w` toggle wrap lines
 - `<Ctrl-I>` and <Ctrl-O> jumping to previous and next cursor positions
 - `<Ctrl-a>` select all
 - `[-` Move to *previous* line of *lesser* indent than the current line.
 - `[+` Move to *previous* line of *greater* indent than the current line.
-- `[=` Move to *previous* line of *same* indent as the current line that
-       is separated from the current line by lines of different indents.
+- `[=` Move to *previous* line of *same* indent as the current line that is
+  separated from the current line by lines of different indents.
 - `]-` Move to *next* line of *lesser* indent than the current line.
 - `]+` Move to *next* line of *greater* indent than the current line.
-- `]=` Move to *next* line of *same* indent as the current line that
-       is separated from the current line by lines of different indents.
+- `]=` Move to *next* line of *same* indent as the current line that is
+  separated from the current line by lines of different indents.
 
 ### Selecting
 Generally going to visual mode is the selection mode and if you start
@@ -148,7 +154,8 @@ mode until the current position. Although there are more shortcuts:
 
 - `+` expand selection region
 - `_` shrink selection region
-- `vii` select the indentation scope, adding more ii increases the indentation level
+- `vii` select the indentation scope, adding more ii increases the indentation
+  level
 - `o` Go to Other end of highlighted text
 
 #### Multiple cursor mode
@@ -181,16 +188,21 @@ mode until the current position. Although there are more shortcuts:
 - `ci'` change the text inside the quotes
 - `1z=` fix the spelling under the cursor
 - `zg` learn spelling of the word under cursor
-- `da)` cut all the text inside and including the parentheses, same goes for brackets or braces
-- `ysiw<tag>` yank surrounding inner word with <tag> (add <tag> to the word boundaries)
+- `da)` cut all the text inside and including the parentheses, same goes for
+  brackets or braces
+- `ysiw<tag>` yank surrounding inner word with <tag> (add <tag> to the word
+  boundaries)
 - `ct` change the text enclosed by the tag (e.g: html, xml)
 - `di>` cut the tag info
 - `di}` cut everything inside the curly braces
-- `cii` change the indentation scope (delete the indentation scope and go to insert mode)
+- `cii` change the indentation scope (delete the indentation scope and go to
+  insert mode)
 - `dii` cut the indentation scope
-- `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case for the current word)
-- `<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't work in multiple cursor mode)
-- `gq}` auto wrap the paragraph, `gq%` autowrap the current line.
+- `~` swap case, can be combined with other motions (e.g: `g~iw` will swap case
+  for the current word)
+- `<ctrl>j` or `<ctrl>k` move selection or current line up or down (it doesn't
+  work in multiple cursor mode)
+- `gq}` auto wrap the paragraph, `gqq` autowrap the current line.
 
 ### Handling files
 Use `vimdiff f1 f2` in bash to see the difference between file `f1` and `f2`.
