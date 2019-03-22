@@ -38,7 +38,7 @@ Plug 'mg979/vim-visual-multi', { 'branch': 'test'}
 Plug 'wellle/targets.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'chaoren/vim-wordmotion'
+" Plug 'chaoren/vim-wordmotion'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
@@ -46,12 +46,15 @@ Plug 'terryma/vim-expand-region'
 Plug 'wincent/terminus'
 Plug 'mbbill/undotree'
 Plug 'jeetsukumaran/vim-indentwise'
+Plug 'tmsvg/pear-tree'
+Plug 'TaDaa/vimade'
 
 call plug#end()
 
 colorscheme bahman
 set background=dark
-set autochdir
+" set autochdir
+autocmd BufEnter * silent! lcd %:p:h
 set lazyredraw
 set ttyfast
 set textwidth=80
@@ -65,7 +68,7 @@ set belloff=all
 set clipboard=unnamed
 set ts=4
 set autoindent
-set smartindent
+" set smartindent
 set number
 set expandtab
 set shiftwidth=4
@@ -82,6 +85,7 @@ set foldmethod=indent
 set undofile
 set noswapfile
 set undodir=~/.vimUndoHistory
+cabbrev help tab help
 let g:pymode = 1
 let g:pymode_rope_completion = 0
 let g:pymode_python = 'python3'
@@ -105,6 +109,7 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap Y y$
 nnoremap <buffer> <leader>r :exec '!python3' shellescape(@%, 1)<cr>
 nnoremap <M-a> :echo "aaaasdasd"<CR>
 nnoremap <leader>j :jumps<CR>
@@ -119,6 +124,7 @@ nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>gu :GitGutterUndoHunk<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>c :bd<CR>
+nnoremap <CR> :nohlsearch<CR>:set cul cuc<cr>:sleep 50m<cr>:set nocul nocuc<cr>/<BS>
 nnoremap <leader>cc :bd!<CR>
 nnoremap <leader>s :w<CR>
 nnoremap ]g :GitGutterNextHunk<CR>
@@ -208,6 +214,8 @@ nnoremap ZZ :set ssop+=localoptions<CR> :SS defaultSession<CR> :qa<CR>
 nnoremap <leader>ag :Ag <c-r>=expand("<cword>")<cr><cr>
 map  f <Plug>(easymotion-bd-f)
 nmap f <Plug>(easymotion-overwin-f)
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 function! s:config_easyfuzzymotion(...) abort
   return extend(copy({
   \   'converters': [incsearch#config#fuzzyword#converter()],

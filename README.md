@@ -183,6 +183,7 @@ mode until the current position. Although there are more shortcuts:
 - `<space>a` match all the words under cursor
 - `y` yank selection (copy)
 - `yy` yank the line
+- `Y` yank from the cursor until end of the line
 - `ysiw<t>` adds a \<t\> around the current word, \<t\> could be anything
 - `ds'` cut the character ' surrounding the word under the cursor
 - `ci'` change the text inside the quotes
@@ -223,7 +224,8 @@ Use `vimdiff f1 f2` in bash to see the difference between file `f1` and `f2`.
 - `:SL` load a saved session
 
 ### Windows
-First hit `<Ctrl-w>` and then any of these keys for the following action:
+First hit `<ctrl>w` and then any of these keys for the following action:
+- `<ctrl>w` twice to cycle through the windows
 - `h` or `j` or `k` or `l` for switching to another window
 - `v` split the current tab vertically
 - `<shift>j` swap the direction of split to horizontal direction

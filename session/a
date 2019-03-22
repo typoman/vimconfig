@@ -9,13 +9,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ~/.vim/vimrc
-badd +707 ~/bitbucket/featureMan/Lib/featureMan/otSyntax.py
-badd +168 ~/bitbucket/featureMan/Lib/featureMan/otMark.py
-badd +16 ~/Dropbox/Robofont\ Scripts/-\ Arabic/createFinalGlyphNames.py
+badd +1 ~/Desktop/archive/temp.py
+badd +13 familyFeatures.py
+badd +0 otMark.py
 argglobal
 silent! argdel *
-edit ~/Dropbox/Robofont\ Scripts/-\ Arabic/createFinalGlyphNames.py
+edit otMark.py
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -27,6 +26,22 @@ set winwidth=1
 argglobal
 let s:cpo_save=&cpo
 set cpo&vim
+imap <buffer> <BS> <Plug>(PearTreeBackspace)
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeJNR) pear_tree#insert_mode#JumpNReturn()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeJump) pear_tree#insert_mode#JumpOut()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeExpandOne) pear_tree#insert_mode#ExpandOne()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeFinishExpansion) pear_tree#insert_mode#Expand()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeExpand) pear_tree#insert_mode#PrepareExpansion()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeBackspace) pear_tree#insert_mode#Backspace()
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeCloser_}) pear_tree#insert_mode#HandleCloser('}')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_{) pear_tree#insert_mode#TerminateOpener('{')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeCloser_)) pear_tree#insert_mode#HandleCloser(')')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_() pear_tree#insert_mode#TerminateOpener('(')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeCloser_]) pear_tree#insert_mode#HandleCloser(']')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_[) pear_tree#insert_mode#TerminateOpener('[')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_`) pear_tree#insert_mode#TerminateOpener('`')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_') pear_tree#insert_mode#TerminateOpener('''')
+inoremap <buffer> <silent> <expr> <Plug>(PearTreeOpener_") pear_tree#insert_mode#TerminateOpener('"')
 nmap <buffer>  hp <Plug>GitGutterPreviewHunk
 nmap <buffer>  hu <Plug>GitGutterUndoHunk
 nmap <buffer>  hs <Plug>GitGutterStageHunk
@@ -34,14 +49,14 @@ nnoremap <buffer> <silent>  b :call pymode#breakpoint#operate(line('.'))
 vnoremap <buffer> <silent>  r :PymodeRun
 nnoremap <buffer> <silent>  r :PymodeRun
 onoremap <buffer> C :call pymode#motion#select('^\s*class\s', 0)
-xnoremap <buffer> <silent> K :call pymode#doc#show(@*)
+vnoremap <buffer> <silent> K :call pymode#doc#show(@*)
 nnoremap <buffer> <silent> K :call pymode#doc#find()
 onoremap <buffer> M :call pymode#motion#select('^\s*def\s', 0)
 nmap <buffer> [c <Plug>GitGutterPrevHunk
 onoremap <buffer> [C :call pymode#motion#move('\v^(class|def)\s', 'b')
 nnoremap <buffer> [C :call pymode#motion#move('\v^(class|def)\s', 'b')
-xnoremap <buffer> [M :call pymode#motion#vmove('^\s*def\s', 'b')
-xnoremap <buffer> [[ :call pymode#motion#vmove('\v^(class|def)\s', 'b')
+vnoremap <buffer> [M :call pymode#motion#vmove('^\s*def\s', 'b')
+vnoremap <buffer> [[ :call pymode#motion#vmove('\v^(class|def)\s', 'b')
 onoremap <buffer> [M :call pymode#motion#move('^\s*def\s', 'b')
 onoremap <buffer> [[ :call pymode#motion#move('\v^(class|def)\s', 'b')
 nnoremap <buffer> [M :call pymode#motion#move('^\s*def\s', 'b')
@@ -49,22 +64,34 @@ nnoremap <buffer> [[ :call pymode#motion#move('\v^(class|def)\s', 'b')
 nmap <buffer> ]c <Plug>GitGutterNextHunk
 onoremap <buffer> ]C :call pymode#motion#move('\v^(class|def)\s', '')
 nnoremap <buffer> ]C :call pymode#motion#move('\v^(class|def)\s', '')
-xnoremap <buffer> ]M :call pymode#motion#vmove('^\s*def\s', '')
-xnoremap <buffer> ]] :call pymode#motion#vmove('\v^(class|def)\s', '')
+vnoremap <buffer> ]M :call pymode#motion#vmove('^\s*def\s', '')
+vnoremap <buffer> ]] :call pymode#motion#vmove('\v^(class|def)\s', '')
 onoremap <buffer> ]M :call pymode#motion#move('^\s*def\s', '')
 onoremap <buffer> ]] :call pymode#motion#move('\v^(class|def)\s', '')
 nnoremap <buffer> ]M :call pymode#motion#move('^\s*def\s', '')
 nnoremap <buffer> ]] :call pymode#motion#move('\v^(class|def)\s', '')
 xmap <buffer> ac <Plug>GitGutterTextObjectOuterVisual
 omap <buffer> ac <Plug>GitGutterTextObjectOuterPending
-xnoremap <buffer> aM :call pymode#motion#select('^\s*def\s', 0)
+vnoremap <buffer> aM :call pymode#motion#select('^\s*def\s', 0)
 onoremap <buffer> aM :call pymode#motion#select('^\s*def\s', 0)
-xnoremap <buffer> aC :call pymode#motion#select('^\s*class\s', 0)
+vnoremap <buffer> aC :call pymode#motion#select('^\s*class\s', 0)
 onoremap <buffer> aC :call pymode#motion#select('^\s*class\s', 0)
-xnoremap <buffer> iM :call pymode#motion#select('^\s*def\s', 1)
+vnoremap <buffer> iM :call pymode#motion#select('^\s*def\s', 1)
 onoremap <buffer> iM :call pymode#motion#select('^\s*def\s', 1)
-xnoremap <buffer> iC :call pymode#motion#select('^\s*class\s', 1)
+vnoremap <buffer> iC :call pymode#motion#select('^\s*class\s', 1)
 onoremap <buffer> iC :call pymode#motion#select('^\s*class\s', 1)
+imap <buffer>  <Plug>(PearTreeExpand)
+imap <buffer> <nowait>  <Plug>(PearTreeFinishExpansion)
+imap <buffer>  <Plug>(PearTreeFinishExpansion)
+imap <buffer> " <Plug>(PearTreeOpener_")
+imap <buffer> ' <Plug>(PearTreeOpener_')
+imap <buffer> ( <Plug>(PearTreeOpener_()
+imap <buffer> ) <Plug>(PearTreeCloser_))
+imap <buffer> [ <Plug>(PearTreeOpener_[)
+imap <buffer> ] <Plug>(PearTreeCloser_])
+imap <buffer> ` <Plug>(PearTreeOpener_`)
+imap <buffer> { <Plug>(PearTreeOpener_{)
+imap <buffer> } <Plug>(PearTreeCloser_})
 let &cpo=s:cpo_save
 unlet s:cpo_save
 setlocal keymap=
@@ -153,7 +180,7 @@ setlocal noscrollbind
 setlocal shiftwidth=4
 setlocal noshortname
 setlocal signcolumn=auto
-setlocal smartindent
+setlocal nosmartindent
 setlocal softtabstop=4
 setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
@@ -178,17 +205,17 @@ setlocal undofile
 setlocal undolevels=-123456
 setlocal varsofttabstop=
 setlocal vartabstop=
-setlocal winfixheight
+setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 170 - ((32 * winheight(0) + 20) / 41)
+let s:l = 177 - ((27 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-170
-normal! 010|
-lcd ~/
+177
+normal! 061|
+lcd ~/bitbucket/featureMan/Lib/featureMan
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
