@@ -242,3 +242,6 @@ First hit `<ctrl>w` and then any of these keys for the following action:
 - `zi` toggle folding
 - `zo` open fold
 - `zc` close fold
+
+### other
+- '<space>vr' reload vimrc file
