@@ -96,6 +96,9 @@ which is also dependent on the plugins I've installed.
 - `:q` exit vim
 - `<space>vr` update the configuration form the vimrc file
 - `<space>gr` update the git repo and this readme
+- `:PlugClean` clean removed plugins from vimrc
+- `:PlugUpdate` update the plugins added to the vimrc
+- `:PlugInstall` install the plugins added to the vimrc
 
 ## Normal/Visual Mode shortcuts:
 

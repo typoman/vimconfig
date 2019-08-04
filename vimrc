@@ -8,11 +8,10 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
-Plug 'vim-syntastic/syntastic'
-Plug 'tomtom/tcomment_vim'
-Plug 'haya14busa/incsearch.vim'
-Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree'| " fodler tree explorere
+Plug 'vim-syntastic/syntastic'| " shows syntax erros for code
+Plug 'tomtom/tcomment_vim'| " adds commenting commands using g<motion>
+Plug 'haya14busa/incsearch.vim'| " highlights the matched search using /
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
@@ -24,8 +23,6 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chiedo/vim-dr-replace'
 Plug 'adelarsq/vim-matchit'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
 Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
 Plug 'SirVer/ultisnips'
 Plug 'hdima/python-syntax'
@@ -66,7 +63,6 @@ set mouse=a
 set mousehide
 set belloff=all
 set clipboard=unnamed
-set ts=4
 set autoindent
 " set smartindent
 set number
