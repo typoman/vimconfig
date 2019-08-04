@@ -11,7 +11,7 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-edit Tests/feaLib/builder_test.py
+edit ~/.vim/vimrc
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -28,22 +28,24 @@ setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
-setlocal nofen
-let s:l = 57 - ((56 * winheight(0) + 32) / 64)
+setlocal fen
+225
+normal! zo
+let s:l = 94 - ((34 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-57
-normal! 052|
-lcd ~/Github/fonttools/Tests/feaLib
+94
+normal! 0
+lcd ~/.vim
 tabnext 1
-badd +0 ~/Github/fonttools/Tests/feaLib/builder_test.py
-badd +57 ~/Github/ufoNormalizer/src/ufonormalizer.py
+badd +0 ~/.vim/vimrc
+badd +62 ~/.vim/README.md
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=aoOc
+set winheight=1 winwidth=20 shortmess=filnxtToOc
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)

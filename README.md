@@ -99,6 +99,7 @@ which is also dependent on the plugins I've installed.
 - `:PlugClean` clean removed plugins from vimrc
 - `:PlugUpdate` update the plugins added to the vimrc
 - `:PlugInstall` install the plugins added to the vimrc
+- `<space>ss` show the syntax highlighting group name for the character
 
 ## Normal/Visual Mode shortcuts:
 

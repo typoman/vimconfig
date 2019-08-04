@@ -68,8 +68,8 @@ set showmatch
 set re=1
 set termbidi
 set encoding=utf-8
-set guifont=BlexMono_Nerd_Font_Mono_Text:h14
 set ignorecase
+set guifont=BlexMono\ Nerd\ Font\ Mono:h14
 set smartcase
 set wildmenu
 set foldmethod=indent
