@@ -23,7 +23,7 @@ cd src
 make; make install
 ```
 
-# Installing using the Homebrew:
+<!-- # Installing using the Homebrew: -->
 1. Check if `brew` is installed in terminal, otherwise install Homebrew using:
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)
