@@ -95,6 +95,7 @@ which is also dependent on the plugins I've installed.
 - `<space>?` fuzzy find shortcuts`
 - `:q` exit vim
 - `<space>vr` update the configuration form the vimrc file
+- `<space>gr` update the git repo and this readme
 
 ## Normal/Visual Mode shortcuts:
 
