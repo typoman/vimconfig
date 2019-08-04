@@ -35,7 +35,7 @@ brew cleanup
 brew install vim --with-python3
 ```
 
-# Install this configuration:
+<!-- # Install this configuration: -->
 ```
 cd ~
 mkdir .vim
