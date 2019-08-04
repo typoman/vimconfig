@@ -32,7 +32,7 @@ hi SpecialChar guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE 
 hi Conditional guifg=#d7ff87 guibg=NONE guisp=NONE gui=bold ctermfg=192 ctermbg=NONE cterm=bold
 hi StorageClass guifg=#5f5f87 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Todo guifg=#ffffff guibg=#ff8700 guisp=#ff8700 gui=NONE ctermfg=15 ctermbg=208 cterm=NONE
-hi Special guifg=#47BAFF guibg=NONE guisp=NONE gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
+hi Special guifg=#44F4CD guibg=NONE guisp=NONE gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#ff8700 guibg=NONE guisp=NONE gui=NONE ctermfg=208 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#262626 guibg=#ffd700 guisp=#ffd700 gui=bold ctermfg=235 ctermbg=220 cterm=bold
 hi Label guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
