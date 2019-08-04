@@ -12,17 +12,17 @@ Plug 'scrooloose/nerdtree'| " fodler tree explorere
 Plug 'vim-syntastic/syntastic'| " shows syntax erros for code
 Plug 'tomtom/tcomment_vim'| " adds commenting commands using g<motion>
 Plug 'haya14busa/incsearch.vim'| " highlights the matched search using /
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'| " shows the changes in the code in a git repo
+" Plug 'tpope/vim-fugitive'| " git commands inside vim
 Plug 'Valloric/YouCompleteMe'
-Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'| " adds better repeating for plugins when you use the . commands
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-surround'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-surround'| " change inside the tags and quotes using cs'
+Plug 'michaeljsmith/vim-indent-object'| " move easier across indents
+Plug 'ryanoasis/vim-devicons'| "Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 Plug 'chiedo/vim-dr-replace'
-Plug 'adelarsq/vim-matchit'
+Plug 'adelarsq/vim-matchit'| " use % keystrokes to match pairs of stuff that enclose a text
 Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
 Plug 'SirVer/ultisnips'
 Plug 'hdima/python-syntax'
@@ -50,25 +50,23 @@ call plug#end()
 
 colorscheme bahman
 set background=dark
+set nocompatible
+filetype plugin on
+runtime macros/matchit.vim
 " set autochdir
 autocmd BufEnter * silent! lcd %:p:h
 set lazyredraw
 set ttyfast
 set textwidth=80
-" set relativenumber " slows vim down
-" 
-" set termguicolors
 set bs=2
 set mouse=a
 set mousehide
 set belloff=all
 set clipboard=unnamed
 set autoindent
-" set smartindent
 set number
 set expandtab
 set shiftwidth=4
-" set cursorline " slows vim down
 set showmatch
 set re=1
 set termbidi
@@ -100,11 +98,11 @@ let g:pymode_folding = 0
 let macvim_skip_colorscheme = 1
 let mapleader = " "
 autocmd FileType python set colorcolumn=180
-" map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>rw :DrAll | " replaces the word under cursor
 nnoremap Y y$
 nnoremap <buffer> <leader>r :exec '!python3' shellescape(@%, 1)<cr>
 nnoremap <M-a> :echo "aaaasdasd"<CR>
