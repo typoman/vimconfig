@@ -93,6 +93,8 @@ which is also dependent on the plugins I've installed.
 - `V` visual line mode (select lines)
 - `:map <shorcut combination>` check if a shortcut exist
 - `<space>?` fuzzy find shortcuts`
+- `:q` exit vim
+- `<space>vr` update the configuration form the vimrc file
 
 ## Normal/Visual Mode shortcuts:
 
@@ -177,7 +179,8 @@ mode until the current position. Although there are more shortcuts:
 - `C` delete characters from cursor until end of the line and go to insert mode
 - `x` delete the character under the cursor
 - `s` delete the character under the cursor and go to insert mode
-- `o` create a new line after current line and go to insert mode
+- `O` create a new line above the cursor
+- `o` create a new line below the cursor
 - `Vx` delete the line
 - `dd` cut the current line
 - `<space>a` match all the words under cursor
