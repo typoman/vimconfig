@@ -24,7 +24,7 @@ Plug 'ryanoasis/vim-devicons'| "Adds file type glyphs/icons to popular Vim plugi
 Plug 'chiedo/vim-dr-replace'
 Plug 'adelarsq/vim-matchit'| " use % keystrokes to match pairs of stuff that enclose a text
 Plug 'diraol/python-mode', { 'branch': 'fix_six_import' }
-Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'| " make snippets
 Plug 'hdima/python-syntax'
 Plug 'honza/vim-snippets'
 Plug 'yuttie/comfortable-motion.vim'
@@ -50,9 +50,6 @@ call plug#end()
 
 colorscheme bahman
 set background=dark
-set nocompatible
-filetype plugin on
-runtime macros/matchit.vim
 " set autochdir
 autocmd BufEnter * silent! lcd %:p:h
 set lazyredraw
