@@ -31,7 +31,8 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
-Plug 'mg979/vim-visual-multi', { 'branch': 'test'}
+" Plug 'mg979/vim-visual-multi', { 'branch': 'test'}
+Plug 'terryma/vim-multiple-cursors'
 Plug 'wellle/targets.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -162,18 +163,6 @@ let g:startify_session_persistence = 1
 set scrolloff=5
 set listchars=eol:↵,trail:·,nbsp:·,tab:⇥\
 set list
-let g:VM_no_meta_mappings = 1
-let g:VM_maps = {}
-let g:VM_maps["Select All"]        = '<leader>a'
-let g:VM_maps["Visual All"]        = '<leader>a'
-let g:VM_maps["Align"]             = '<leader>A'
-let g:VM_maps["Add Cursor Down"]   = '<C-j>'
-let g:VM_maps["Add Cursor Up"]     = '<C-k>'
-let g:VM_mouse_mappings             = 1
-" let g:textobj_syntax_no_default_key_mappings = 1
-" automatically source last used session when no files were given to Vim
-" autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
-" autocmd BufWritePost * :SS defaultSession
 autocmd VimEnter * if exists(':SLoad') && !argc() | SLoad | endif
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],

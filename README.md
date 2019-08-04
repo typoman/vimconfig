@@ -99,7 +99,6 @@ which is also dependent on the plugins I've installed.
 - `:PlugClean` clean removed plugins from vimrc
 - `:PlugUpdate` update the plugins added to the vimrc
 - `:PlugInstall` install the plugins added to the vimrc
-- `<space>ss` show the syntax highlighting group name for the character
 
 ## Normal/Visual Mode shortcuts:
 
@@ -166,7 +165,7 @@ mode until the current position. Although there are more shortcuts:
 - `o` Go to Other end of highlighted text
 
 #### Multiple cursor mode
-- `<Ctrl-n>` select the next word matching the pattern under cursor/selection
+- `<Ctrl-n>` select the next word matching the pattern under cursor/selection 
 - `<Ctrl-j>` or `<Ctrl-k>` add one cursor up or down
 - `{` or `}` go to previous cursor or next one
 - `[` or `]` add next match or previous match
