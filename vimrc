@@ -51,7 +51,7 @@ call plug#end()
 
 colorscheme bahman
 set background=dark
-" set autochdir
+set autochdir
 autocmd BufEnter * silent! lcd %:p:h
 set lazyredraw
 set ttyfast
