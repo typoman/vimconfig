@@ -13,7 +13,7 @@ Plug 'vim-syntastic/syntastic'| " shows syntax erros for code
 Plug 'tomtom/tcomment_vim'| " adds commenting commands using g<motion>
 Plug 'haya14busa/incsearch.vim'| " highlights the matched search using /
 Plug 'airblade/vim-gitgutter'| " shows the changes in the code in a git repo
-" Plug 'tpope/vim-fugitive'| " git commands inside vim
+Plug 'tpope/vim-fugitive'| " git commands inside vim
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-repeat'| " adds better repeating for plugins when you use the . commands
 Plug 'vim-airline/vim-airline'
