@@ -101,6 +101,7 @@ map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 " Enable folding with the spacebar
 nnoremap <leader> za
+nnoremap <leader><leader> zi
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>rw :DrAll | " replaces the word under cursor
 nnoremap Y y$
