@@ -100,13 +100,12 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nmap <leader>ac :Ack <C-r><C-w><CR>
 " Enable folding with the spacebar
-nnoremap <space><space> za
+nnoremap <leader> za
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>rw :DrAll | " replaces the word under cursor
 nnoremap Y y$
 nnoremap <buffer> <leader>r :exec '!python3' shellescape(@%, 1)<cr>
 nnoremap <M-a> :echo "aaaasdasd"<CR>
-nnoremap <leader>j :jumps<CR>
 nnoremap H ^
 nnoremap <C-A> ggVG
 nnoremap J $
